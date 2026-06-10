@@ -18,6 +18,9 @@ export const metadata = {
     default: "Airport Golden Tulip Hotel",
     template: "%s | Airport Golden Tulip Hotel",
   },
+  icons: {
+    icon: "./favicon.png",
+  },
 
   description:
     "Luxury airport hotel offering premium accommodation, dining, events and conference facilities.",
@@ -41,7 +44,7 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  
+
   openGraph: {
     title: "Airport Golden Tulip Hotel",
     description:
