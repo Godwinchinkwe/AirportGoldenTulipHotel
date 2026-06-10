@@ -1,66 +1,313 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  FaSwimmingPool,
+  FaWifi,
+  FaParking,
+  FaUtensils,
+  FaDumbbell,
+  FaConciergeBell,
+} from "react-icons/fa";
+
+import { FiChevronRight } from "react-icons/fi";
+
+import Hero from "../../src/components/Hero/Hero";
+import RoomCard from "../components/RoomCard/RoomCard";
+import GalleryPreview from "../../src/components/GalleryPreview/GalleryPreview";
+
+import Deluxe from "../../public/images/rooms/Deluxe.jpg";
+import Suite from "../../public/images/rooms/Suite.jpg";
+import Executive from "../../public/images/rooms/executive.jpg";
+
+import "./page.css";
+
+const Home = () => {
+  const hotelSchema = {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    name: "Airport Golden Tulip Hotel",
+    url: "https://www.airportgoldentuliphotel.com",
+    telephone: "+2348158003333",
+
+    address: {
+      "@type": "PostalAddress",
+      streetAddress:
+        "40-42 Murtala Muhammed International Airport Road",
+      addressLocality: "Ikeja",
+      addressRegion: "Lagos",
+      addressCountry: "NG",
+    },
+
+    amenityFeature: [
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Free WiFi",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Swimming Pool",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Restaurant",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Gym",
+        value: true,
+      },
+    ],
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const amenities = [
+    {
+      icon: FaSwimmingPool,
+      title: "Swimming Pool",
+      description: "Olympic-size heated pool",
+    },
+    {
+      icon: FaWifi,
+      title: "Free WiFi",
+      description: "High-speed internet access",
+    },
+    {
+      icon: FaParking,
+      title: "Free Parking",
+      description: "Secure parking",
+    },
+    {
+      icon: FaUtensils,
+      title: "Fine Dining",
+      description: "Award-winning restaurant",
+    },
+    {
+      icon: FaDumbbell,
+      title: "Fitness Center",
+      description: "State-of-the-art gym",
+    },
+    {
+      icon: FaConciergeBell,
+      title: "Concierge",
+      description: "24/7 guest services",
+    },
+  ];
+
+  const rooms = [
+    {
+      id: "deluxe",
+      title: "Deluxe Room",
+      description:
+        "Comfortable and elegant rooms with modern amenities",
+      price: 150000,
+      image: Deluxe,
+      features: [
+        "King Size Bed",
+        "City View",
+        "Free WiFi",
+        "Mini Bar",
+        "Work Desk",
+      ],
+    },
+
+    {
+      id: "executive",
+      title: "Executive Room",
+      description:
+        "Premium workspace with luxurious accommodations",
+      price: 180000,
+      image: Executive,
+      features: [
+        "Executive Lounge Access",
+        "Premium Amenities",
+        "Work Area",
+        "City View",
+        "Complimentary Breakfast",
+      ],
+    },
+
+    {
+      id: "suite",
+      title: "Luxury Suite",
+      description:
+        "Ultimate luxury with separate living area",
+      price: 300000,
+      image: Suite,
+      features: [
+        "Separate Living Area",
+        "Premium Suite",
+        "Butler Service",
+        "Panoramic View",
+        "Spa Access",
+      ],
+    },
+  ];
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(hotelSchema),
+        }}
+      />
+
+      <div className="home">
+        <Hero />
+
+        <section className="section amenities-section">
+          <div className="container">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="section-header text-center"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
+              <h2>World-Class Amenities</h2>
+
+              <p className="section-subtitle">
+                Experience luxury with our premium facilities
+                and services.
+              </p>
+            </motion.div>
+
+            <div className="amenities-grid">
+              {amenities.map((amenity, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                  }}
+                  className="amenity-card"
+                >
+                  <div className="amenity-icon">
+                    <amenity.icon />
+                  </div>
+
+                  <h4>{amenity.title}</h4>
+
+                  <p>{amenity.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section rooms-section bg-off-white">
+          <div className="container">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="section-header text-center"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+              <h2>Luxurious Accommodations</h2>
+
+              <p className="section-subtitle">
+                Choose from our elegant collection of rooms and
+                suites.
+              </p>
+            </motion.div>
+
+            <div className="rooms-grid">
+              {rooms.map((room, index) => (
+                <motion.div
+                  key={room.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.1,
+                  }}
+                >
+                  <RoomCard room={room} />
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center"
+            >
+              <Link
+                href="/rooms"
+                onClick={scrollToTop}
+                className="btn btn-outline"
+              >
+                View All Rooms
+                <FiChevronRight className="btn-icon" />
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+
+        <GalleryPreview />
+
+        <section className="section cta-section bg-primary">
+          <div className="container">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="cta-content text-center"
+            >
+              <h2>Ready to Experience Luxury?</h2>
+
+              <p>
+                Book your stay at Airport Golden Tulip Hotel
+                and enjoy world-class hospitality.
+              </p>
+
+              <Link
+                href="/booking"
+                onClick={scrollToTop}
+                className="btn btn-white"
+              >
+                Book Now
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+      </div>
+    </>
   );
-}
+};
+
+export default Home;
