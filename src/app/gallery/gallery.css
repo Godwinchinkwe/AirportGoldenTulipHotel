@@ -6,7 +6,7 @@
   justify-content: center;
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('/public/Assets/front.jpg');
+    url('/../../public/images/restaurant.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -11,7 +11,7 @@ import {
 
 import Image from "next/image";
 
-import "./Gallery.css";
+import "./gallery.css";
 
 import Deluxe from "../../../public/images/rooms/Deluxe.jpg";
 import Executive from "../../../public/images/rooms/executive.jpg";
