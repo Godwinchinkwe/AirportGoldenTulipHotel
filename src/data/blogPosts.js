@@ -144,7 +144,7 @@ export const blogPosts = [
     `,
   },
      {
-    slug: "hotels-with-airport-pickup-in-ikeja-airport golden-tulip-hotel",
+    slug: "hotels-with-airport-pickup-in-ikeja-airport-golden-tulip-hotel",
     title: "Hotels with Airport Pickup in Ikeja: Airport Golden Tulip Hotel",
     date: "2025-03-20",
     image: Pickup,
