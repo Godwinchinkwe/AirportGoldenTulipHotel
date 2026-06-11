@@ -47,16 +47,16 @@ button {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color:#5900ff ;
 }
 
 ul, ol {
   list-style: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+/* p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
-}
+} */
 
 :root {
   --color-primary:#a98024; 

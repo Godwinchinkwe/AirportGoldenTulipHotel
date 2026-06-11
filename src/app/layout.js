@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body suppressHydrationWarning={true}>
 
-        <LoadingScreen />
+        < LoadingScreen />
         < Header />
 
         <main>{children}</main>

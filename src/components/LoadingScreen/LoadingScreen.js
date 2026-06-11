@@ -5,13 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./LoadingScreen.css";
 
 export default function LoadingScreen() {
-  const [showLoader, setShowLoader] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return !sessionStorage.getItem("visited");
-  });
+  const [showLoader, setShowLoader] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (showLoader) {
+    setMounted(true);
+
+    const hasVisited = sessionStorage.getItem("visited");
+
+    if (!hasVisited) {
+      setShowLoader(true);
       sessionStorage.setItem("visited", "true");
 
       const timer = setTimeout(() => {
@@ -20,16 +23,18 @@ export default function LoadingScreen() {
 
       return () => clearTimeout(timer);
     }
-  }, [showLoader]);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <AnimatePresence>
       {showLoader && (
         <motion.div
+          className="loading-screen"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="loading-screen"
         >
           <div className="loader">
             <div className="loader-spinner"></div>
