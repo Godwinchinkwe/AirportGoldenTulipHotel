@@ -8,9 +8,6 @@ import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
 
 
-
-
-
 export const metadata = {
   metadataBase: new URL("https://airportgoldentuliphotel.com"),
 
