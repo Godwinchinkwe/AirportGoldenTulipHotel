@@ -42,6 +42,14 @@ export const metadata = {
     },
   },
 
+    verification: {
+    google: "c92b4688de54005b",
+  },
+
+    alternates: {
+    canonical: "https://airportgoldentuliphotel.com",
+  },
+
   openGraph: {
     title: "Airport Golden Tulip Hotel",
     description:
