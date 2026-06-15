@@ -7,7 +7,8 @@
   justify-content: center;
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/public/Assets/frontdesk.jpg');
+    url('../../BG/frontdesk.jpg');
+    
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
