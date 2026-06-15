@@ -84,8 +84,8 @@ const Home = () => {
     },
     {
       icon: FaParking,
-      title: "Free Parking",
-      description: "Secure parking",
+      title: "Hotel Near Airport Lagos",
+      description: "Hotel Near Murtala Muhammed Airport",
     },
     {
       icon: FaUtensils,

@@ -22,7 +22,7 @@ export default function RoomsPage() {
   const rooms = [
     {
       id: "deluxe",
-      title: "Deluxe Room",
+      title: "Deluxe Room Near Lagos International Airport",
       description:
         "Comfortable and elegant rooms with modern amenities",
 
@@ -46,7 +46,7 @@ export default function RoomsPage() {
     {
       id: "executive",
 
-      title: "Executive Room",
+      title: "Executive Room Near Lagos International Airport",
 
       description:
         "Premium workspace with luxurious accommodations",
@@ -71,7 +71,7 @@ export default function RoomsPage() {
     {
       id: "suite",
 
-      title: "Luxury Suite",
+      title: "Luxury Suite Near Lagos International Airport",
 
       description:
         "Ultimate luxury with separate living area",

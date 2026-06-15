@@ -20,7 +20,7 @@ export const metadata = {
   },
 
   description:
-    "Luxury airport hotel offering premium accommodation, dining, events and conference facilities.",
+    "Airport Golden Tulip Hotel Lagos is a luxury hotel located 2 minutes from Murtala Muhammed International Airport. Enjoy premium rooms, airport convenience, conference facilities, fine dining and exceptional hospitality.",
 
   keywords: [
     "airport hotel",
