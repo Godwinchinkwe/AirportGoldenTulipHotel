@@ -14,6 +14,7 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <main className="blog-page containered">
+      
       <div className="blog-header">
         <h1>Hotel Blog</h1>
 

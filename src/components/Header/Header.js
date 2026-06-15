@@ -36,12 +36,13 @@ const Header = () => {
   };
 
   const navItems = [
-    { path: "/", label: "Home" },
+    // { path: "/", label: "Home" },
     { path: "/rooms", label: "Accommodations" },
     { path: "/booking", label: "Booking" },
     { path: "/about", label: "About" },
     { path: "/contact", label: "Contact" },
     { path: "/blog", label: "Blog" },
+    { path: "/faq", label: "FAQ" },
   ];
 
   const isActive = (path) => {
