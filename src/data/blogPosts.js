@@ -8,6 +8,12 @@ import Nearairport from "../../public/images/blog/nearairport.jpeg";
 import Pickup from "../../public/images/blog/pickup.jpeg";
 import Safety from "../../public/images/blog/safeairport.jpeg";
 import Transit from "../../public/images/blog/transit.jpeg";
+import Shuttle from "../../public/images/blog/Shuttle.jpeg";
+import Rum from "../../public/images/blog/rum.jpeg";
+import One from "../../public/images/blog/onehotel.jpeg";
+import Afford from "../../public/images/blog/Afford.jpeg";
+import Map from "../../public/images/blog/Map.jpeg";
+// import Front from "../../public/images/blog/Front.jpeg";
 
 export const blogPosts = [
   {
@@ -174,17 +180,117 @@ export const blogPosts = [
    {
     slug: "airport-golden-tulip-hotel-rated-best-hotel-near-lagos-international-airport",
     title: "Airport Golden Tulip Hotel: Rated Best Hotel Near Lagos International Airport",
-    date: "2025-03-20",
+    date: "2026-03-20",
     image: LuxurySuite,
     excerpt:
       "Airport Golden Tulip Hotel stands out as one of the most strategically located hotels near Murtala Muhammed International Airport. ",
-
     content: `
       <p>Airport Golden Tulip Hotel stands out as one of the most strategically located hotels near Murtala Muhammed International Airport. For travelers arriving in Lagos, proximity to the airport is a major advantage, especially in a city known for heavy traffic. The hotel’s location allows guests to move quickly between the terminal and their accommodation, making it ideal for international visitors, business executives, and transit passengers.</p>
       <p>Beyond location, the hotel is designed to provide a complete hospitality experience. Guests have access to Deluxe Rooms, Executive Rooms, and Suites, each offering comfort, modern interiors, and essential amenities for relaxation after long flights. The environment is structured to support both short and extended stays.</p>
       <p>In addition, the hotel combines accessibility with premium services such as restaurant dining, lounge areas, swimming pool access, and professional hospitality support. This balance of convenience and comfort makes it one of the most searched airport hotels in Lagos.</p>
     `,
   },
+     {
+    slug: "airport-golden-tulip-hotel-lagos-luxury-stay-2-minutes-from-murtala-muhammed-airport",
+    title: "Airport Golden Tulip Hotel Lagos | Luxury Stay 2 Minutes from Murtala Muhammed Airport",
+    date: "2026-06-20",
+    image: Shuttle,
+    excerpt:
+      "Travelers seeking comfort, convenience, and luxury in Lagos will find everything they need at Airport Golden Tulip Hotel Lagos. ",
+    content: `
+      <p>Travelers seeking comfort, convenience, and luxury in Lagos will find everything they need at Airport Golden Tulip Hotel Lagos. Strategically located just two minutes from Murtala Muhammed International Airport (MMIA), the hotel offers seamless access for business travelers, tourists, and transit guests.</p>
+      <p>The hotel features elegantly furnished rooms designed to provide maximum comfort after a long flight. Guests enjoy modern amenities including high-speed Wi-Fi, comfortable bedding, air conditioning, and premium room service.</p>
+      <p>For added convenience, Airport Golden Tulip provides reliable airport pickup and drop-off services, helping guests avoid the stress of navigating Lagos traffic. The hotel's professional staff ensure a smooth and welcoming experience from arrival to departure.</p>
+      <p>Whether you're visiting Lagos for business, leisure, or a short layover, Airport Golden Tulip Hotel combines luxury, accessibility, and exceptional hospitality in one prime location.</p>
+    `,
+  },
+     {
+    slug: "best-airport-hotel-in-ikeja-lagos-airport-golden-tulip-hotel",
+    title: "Best Airport Hotel in Ikeja Lagos | Airport Golden Tulip Hotel",
+    date: "2026-06-20",
+    image: One,
+    excerpt:
+      "When searching for the best airport hotel in Ikeja Lagos, Airport Golden Tulip consistently stands out for its exceptional service and strategic location.",
+    content: `
+      <p>When searching for the best airport hotel in Ikeja Lagos, Airport Golden Tulip consistently stands out for its exceptional service and strategic location. Situated close to Murtala Muhammed International Airport, the hotel offers unmatched convenience for travelers.</p>
+      <p>that support both work and relaxation. The hotel's serene environment creates the perfect retreat from the busy city atmosphere.</p>
+      <p>Business travelers appreciate the hotel's meeting facilities, reliable internet connectivity, and quick airport access. Leisure guests enjoy comfortable accommodations and personalized hospitality that make every stay memorable.</p>
+      <p>Airport Golden Tulip Hotel continues to earn the trust of local and international visitors by delivering quality, comfort, and convenience in the heart of Ikeja.</p>
+    `,
+  },
+       {
+    slug: "airport-pickup-premium-comfort",
+    title: "Airport Pickup & Premium Comfort",
+    date: "2026-06-20",
+    image: Rum,
+    excerpt:
+      "Airport Golden Tulip Lagos offers a premium hospitality experience designed for today's traveler.",
+    content: `
+      <p>Airport Golden Tulip Lagos offers a premium hospitality experience designed for today's traveler. From luxury accommodations to professional airport transfer services, every detail is carefully crafted to ensure guest satisfaction.</p>
+      <pThe hotel's elegant rooms provide a peaceful environment with contemporary furnishings, comfortable beds, smart workspaces, and modern entertainment options. Guests can relax and recharge in style after a busy day.</p>
+      <p>One of the standout features of Airport Golden Tulip Lagos is its dependable airport pickup service. Guests arriving at or departing from Murtala Muhammed International Airport can enjoy stress-free transportation arranged by the hotel.</p>
+      <p>Combining convenience, luxury, and attentive service, Airport Golden Tulip remains a preferred choice for travelers looking for premium comfort near Lagos Airport.</p>
+    `,
+  },
+         {
+    slug: "looking-for-a-hotel-near-lagos-airport-discover-airport-golden-tulip",
+    title: "Looking for a Hotel Near Lagos Airport? Discover Airport Golden Tulip",
+    date: "2026-06-20",
+    image: Map,
+    excerpt:
+      "If you're looking for a hotel near Lagos Airport, Airport Golden Tulip offers the perfect blend of accessibility and comfort.",
+    content: `
+      <p>If you're looking for a hotel near Lagos Airport, Airport Golden Tulip offers the perfect blend of accessibility and comfort. Located just minutes from the airport, the hotel is ideal for business trips, vacations, and transit stays.</p>
+      <p>Guests enjoy well-appointed rooms, excellent customer service, and modern facilities designed to make every stay comfortable. The hotel's peaceful atmosphere provides a welcome escape from the hustle and bustle of Lagos.</p>
+      <p>Airport Golden Tulip also offers convenient airport transfer services, helping guests save time and travel with ease. The strategic location makes it easy to reach key business districts and attractions within Ikeja.</p>
+      <p>For travelers seeking convenience without compromising quality, Airport Golden Tulip Hotel Lagos delivers an outstanding accommodation experience.</p>
+    `,
+  },
+
+  {
+    slug: "business-leisure-transit-stay",
+    title: "Business, Leisure & Transit Stay",
+    date: "2026-06-20",
+    image: LuxurySuite,
+    excerpt:
+      "Airport Golden Tulip Hotel Lagos is designed to meet the needs of every traveler, whether visiting for business, leisure, or a brief transit stop. ",
+    content: `
+      <p>Airport Golden Tulip Hotel Lagos is designed to meet the needs of every traveler, whether visiting for business, leisure, or a brief transit stop. Its proximity to Murtala Muhammed International Airport makes it one of the most convenient hotels in Lagos.</p>
+      <p>Business guests benefit from reliable internet access, comfortable workspaces, and easy transportation to meetings and events. The hotel provides a professional environment that supports productivity and relaxation.</p>
+      <p>Leisure travelers appreciate the comfortable rooms, excellent hospitality, and convenient location that allows easy exploration of Ikeja and surrounding areas. Transit passengers also enjoy quick access to the airport for seamless travel.</p>
+      <p>Leisure travelers appreciate the comfortable rooms, excellent hospitality, and convenient location that allows easy exploration of Ikeja and surrounding areas. Transit passengers also enjoy quick access to the airport for seamless travel.</p>
+    `,
+  },
+   {
+    slug: "affordable-luxury-hotel-near-lagos-airport",
+    title: "Affordable Luxury Hotel Near Lagos Airport ",
+    date: "2026-06-22",
+    image: Afford,
+    excerpt:
+      "Finding affordable luxury near Lagos Airport is easy with Airport Golden Tulip Ikeja. ",
+    content: `
+      <p>Finding affordable luxury near Lagos Airport is easy with Airport Golden Tulip Ikeja. The hotel offers premium accommodations and excellent service at competitive rates, making it a smart choice for travelers.</p>
+      <p>Each room is thoughtfully designed to provide comfort, functionality, and relaxation. Guests enjoy modern amenities including fast Wi-Fi, air conditioning, quality bedding, and attentive room service.</p>
+      <p>The hotel's location near Murtala Muhammed International Airport provides significant convenience, especially for guests with early flights or short transit schedules. Airport transfers further enhance the overall experience.</p>
+      <p>Airport Golden Tulip Ikeja proves that travelers can enjoy luxury, comfort, and convenience without exceeding their accommodation budget.</p>
+    `,
+  },
+   {
+    slug: "",
+    title: "",
+    date: "2026-06-22",
+    image: LuxurySuite,
+    excerpt:
+      "",
+    content: `
+      <p></p>
+      <p></p>
+      <p>.</p>
+      <p></p>
+    `,
+  },
+
+
 ];
 
 export const getPostBySlug = (slug) => {

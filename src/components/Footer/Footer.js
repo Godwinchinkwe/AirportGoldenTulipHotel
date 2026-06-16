@@ -50,8 +50,8 @@ const Footer = () => {
         external: true,
       },
       {
-        path: "/rooms",
-        label: "Luxury Accommodation",
+        path: "/faq",
+        label: "FAQ",
       },
       {
         path: "/gallery",

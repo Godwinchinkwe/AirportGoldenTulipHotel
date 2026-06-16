@@ -20,15 +20,14 @@ const Hero = () => {
 
   return (
     <section className="hero">
-              <Image
-        src={heroImage}
+<Image src={heroImage}
         alt="Airport Golden Tulip Hotel Lagos near Murtala Muhammed International Airport"
         fill
         priority
-        quality={90}
+        loading="eager"
+        quality={75}
         sizes="100vw"
-        className="hero-image"
-      />
+        className="hero-image"/>
       <div className="hero-overlay"></div>
 
 
