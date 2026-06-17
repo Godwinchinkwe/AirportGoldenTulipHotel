@@ -338,6 +338,107 @@ export const blogPosts = [
 
 
 
+   {
+      slug: "best-hotel-near-lagos-airport-for-travelers-airport-golden-tulip-hotel",
+      title: "Best Hotel Near Lagos Airport for Travelers| Airport Golden Tulip Hotel",
+      date: "2026-06-22",
+      image: AirportHotel,
+      excerpt:
+        "Traveling can be exciting, but airport stress is real, early departures, delayed flights, traffic uncertainty, and the need for comfort before or after a journey",
+      content: `
+        <p>Traveling can be exciting, but airport stress is real, early departures, delayed flights, traffic uncertainty, and the need for comfort before or after a journey. That is why choosing the right airport hotel can completely change your travel experience.</p>
+        <p>Airport Golden Tulip Hotel offers a stay designed for convenience, comfort, and seamless travel. Located within easy reach of Murtala Muhammed International Airport, the hotel provides an ideal solution for business travelers, transit guests, families, and international visitors seeking efficiency without sacrificing luxury.</p>
+        <p>Unlike city-center hotels that require long transfers, staying close to the airport gives guests more time to relax, prepare for meetings, or recover after a long flight.</p>
+        <p>Guests enjoy comfortable rooms, quality dining options, reliable service, modern amenities, and easy airport access, all within a welcoming hospitality environment.</p>
+        <p>Whether you're arriving late, departing early, attending meetings in Ikeja, or planning a short stay in Lagos, Airport Golden Tulip Hotel delivers convenience and comfort in one location</p>
+        <h2>Why Travelers Choose Airport Golden Tulip Hotel</h2>
+        <ul>
+    <li>●	Easy access to Lagos airport</li> </br>
+    <li>●	Comfortable rooms and premium hospitality</li></br>
+    <li>●	Business-friendly facilities</li></br>
+    <li>●	Airport transfer convenience</li></br>
+    <li>●	High cleanliness standards</li></br>
+    <li>●	Excellent breakfast experience</li></br>
+    <li>●	Fast check-in and check-out</li></br>
+    </ul>
+    <h2>Frequently Asked Questions</h2>
+    <p>●	What time is check-in?</p>
+    <p>Standard check-in begins according to hotel policy. Early check-in may be available subject to room availability</p>
+    <p>●	Is airport pickup available?</p
+        <p>Yes. Airport pickup and drop-off services may be arranged for guests. Advance requests are recommended for smooth coordination.</p>
+        <p>●	Is breakfast included?</p>
+        <p>Breakfast options vary depending on booking type and package selected.</p>
+        <p>●	Is the hotel suitable for business travelers?</p>
+        <p>Yes. The hotel provides an ideal environment for meetings, work stays, and business travel.
+  
+  Book your stay today and experience convenience, comfort, and exceptional hospitality near Lagos Airport.
+  </p>
+        
+      `,
+    },
+
+     {
+        slug: "airport-shuttle-service-easy-airport-transfers-without-stress",
+        title: "Airport Shuttle Service – Easy Airport Transfers Without Stress",
+        date: "2026-06-22",
+        image: AirportHotel,
+        excerpt:
+          "One of the biggest concerns travelers face is getting to and from the airport smoothly.",
+        content: `
+          <p>One of the biggest concerns travelers face is getting to and from the airport smoothly. Airport Golden Tulip Hotel simplifies your journey with convenient airport shuttle support designed to reduce travel stress.</p>
+          <p>Whether arriving after a long international flight or catching an early morning departure, guests benefit from reliable transport coordination and reduced travel uncertainty.</p>
+    
+          <p>Our airport transfer experience focuses on:</p>
+       
+          <ul>
+      <li>* Timely guest support</li>
+      <li>* Smooth arrivals and departures</li>
+      <li>- Comfortable transportation</li>
+      <li>- Convenience for local and international travelers</li>
+      <li>- Reduced airport transfer stress/li>
+    
+      <p>Business travelers especially value efficient movement between accommodation and airport access points.</p>
+          <p>Yes. Airport pickup and drop-off services may be arranged for guests. Advance requests are recommended for smooth coordination.</p>
+          <p>●	Is breakfast included?</p>
+          <p>Breakfast options vary depending on booking type and package selected.</p>
+          <p>●	Is the hotel suitable for business travelers?</p>
+          <p>Yes. The hotel provides an ideal environment for meetings, work stays, and business travel.
+    
+    Book your stay today and experience convenience, comfort, and exceptional hospitality near Lagos Airport.
+    </p>
+    <p>Airport Golden Tulip Hotel aims to make every stage of your journey comfortable, from arrival to departure.</p>
+    <h2>Shuttle Service FAQ</h2>
+    <p>●	Is airport shuttle available?</p>
+    <p>Airport transfer options may be available for hotel guests.</p>
+    <p>●	How do I request pickup?</p>
+    
+    <p>Guests are encouraged to request airport transportation during booking or before arrival.</p>
+    <p>●	Is the shuttle available late at night?</p>
+    <p>Availability may vary depending on operational schedules.</p>
+    <p>●	Can business groups arrange transfers?</p>
+    <p>Yes, advance arrangements can support group transportation needs.</p>
+          
+        `,
+      },
+
+         {
+          slug: "best-hotel-breakfast-in-ikeja-start-your-morning-right",
+          title: "Best Hotel Breakfast in Ikeja – Start Your Morning Right",
+          date: "2026-06-25",
+          image: AirportHotel,
+          excerpt:
+            "Breakfast is more than the first meal of the day, it sets the tone for business meetings, travel schedules, and memorable experiences.",
+          content: `
+            <p>Breakfast is more than the first meal of the day, it sets the tone for business meetings, travel schedules, and memorable experiences.</p>
+            <p>At Airport Golden Tulip Hotel, breakfast is designed to deliver quality, variety, and a satisfying start to every morning.</p>
+            <p>Guests enjoy an inviting breakfast experience featuring selections designed for both local and international preferences</p>
+            <p>What makes a great hotel breakfast?</p>
+          `,
+        },
+
+
+
+
 
 ];
 

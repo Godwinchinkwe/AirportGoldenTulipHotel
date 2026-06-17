@@ -3,13 +3,17 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { getPostBySlug } from "../../../data/blogPosts";
+import { getPostBySlug2 } from "../../../data/blogPosts2";
 
 import "@/components/Blog/blog.css";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
-  const post = getPostBySlug(slug);
+  
+
+const post =
+  getPostBySlug(slug) || getPostBySlug2(slug);
 
   if (!post) {
     return {

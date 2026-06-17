@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { blogPosts } from "@/data/blogPosts";
+import { blogPosts2 } from "@/data/blogPosts2";
 
 import "@/components/Blog/blog.css";
 
@@ -12,6 +13,11 @@ export const metadata = {
 };
 
 export default function BlogPage() {
+
+    const allBlogPosts = [
+    ...blogPosts,
+    ...blogPosts2,
+  ];
   return (
     <main className="blog-page containered">
       
@@ -25,7 +31,7 @@ export default function BlogPage() {
       </div>
 
       <div className="blog-list">
-        {blogPosts.map((post) => (
+        {allBlogPosts.map((post) => (
           <article key={post.slug} className="blog-card">
                           <Link
                 href={`/blog/${post.slug}`}
