@@ -24,11 +24,28 @@ const post =
   return {
     title: `${post.title} | Airport Golden Tulip Hotel`,
     description: post.excerpt,
+
+    keywords: post.keywords,
+      authors: [
+    {
+      name: "Airport Golden Tulip Hotel",
+    },
+  ],
+
+  creator: "Airport Golden Tulip Hotel",
+
     openGraph: {
       title: post.title,
       description: post.excerpt,
       images: [post.image.src || post.image],
     },
+
+      twitter: {
+    card: "summary_large_image",
+    title: post.title,
+    description: post.excerpt,
+    images: [post.image.src || post.image],
+  },
   };
 }
 

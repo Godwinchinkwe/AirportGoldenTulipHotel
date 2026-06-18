@@ -17,6 +17,9 @@ import Man from "../../public/images/blog/Man.jpeg";
 import Amenities from "../../public/images/blog/Amenities.jpeg";
 import Flier from "../../public/images/blog/Flier.jpeg";
 import Mapping from "../../public/images/blog/Mapping.jpeg";
+import Near from "../../public/images/blog/Near.jpeg";
+import Breakfast from "../../public/images/blog/Breakfast.jpeg";
+import Transfer from "../../public/images/blog/Transfer.jpeg";
 
 export const blogPosts = [
   {
@@ -26,6 +29,16 @@ export const blogPosts = [
     image: AirportHotel,
     excerpt:
       "Lagos is Nigeria's commercial capital and one of Africa's busiest travel destinations.",
+
+        keywords: [
+    "Hotel near Lagos Airport",
+    "Airport hotel Lagos",
+    "Hotel near Murtala Muhammed International Airport",
+    "Airport Golden Tulip Hotel",
+    "Luxury hotel Ikeja",
+    "Business hotel Lagos",
+    "Hotel Near Airport",
+  ],
 
     content: `
       <p>Lagos is Nigeria's commercial capital and one of Africa's busiest travel destinations. Whether you're visiting for business, leisure, or a short transit stop, staying close to Murtala Muhammed International Airport can save valuable time and provide unmatched convenience. Fortunately, Lagos International Airport Road is home to several outstanding hotels that cater to different budgets and preferences.</p>
@@ -342,9 +355,32 @@ export const blogPosts = [
       slug: "best-hotel-near-lagos-airport-for-travelers-airport-golden-tulip-hotel",
       title: "Best Hotel Near Lagos Airport for Travelers| Airport Golden Tulip Hotel",
       date: "2026-06-22",
-      image: AirportHotel,
+      image: Near,
       excerpt:
         "Traveling can be exciting, but airport stress is real, early departures, delayed flights, traffic uncertainty, and the need for comfort before or after a journey",
+
+        keywords: [
+  "best hotel near Lagos airport",
+  "hotels near Murtala Muhammed airport",
+  "airport hotel Lagos",
+  "luxury hotel Ikeja",
+  "hotel close to Lagos airport",
+  "business hotel Lagos",
+  "airport accommodation Nigeria",
+  "transit hotel Lagos",
+  "where to stay near Lagos airport",
+  "Airport Golden Tulip Hotel",
+  "Lagos airport shuttle hotel",
+  "hotel in Ikeja Lagos",
+  "hotel for business travelers Lagos",
+  "hotel near international airport Nigeria",
+  "comfortable airport hotel Lagos",
+  "best airport stay Lagos",
+  "premium hotel Ikeja",
+  "airport pickup hotel Lagos",
+  "luxury stay near airport",
+  "top hotel in Ikeja"
+],
       content: `
         <p>Traveling can be exciting, but airport stress is real, early departures, delayed flights, traffic uncertainty, and the need for comfort before or after a journey. That is why choosing the right airport hotel can completely change your travel experience.</p>
         <p>Airport Golden Tulip Hotel offers a stay designed for convenience, comfort, and seamless travel. Located within easy reach of Murtala Muhammed International Airport, the hotel provides an ideal solution for business travelers, transit guests, families, and international visitors seeking efficiency without sacrificing luxury.</p>
@@ -370,7 +406,6 @@ export const blogPosts = [
         <p>Breakfast options vary depending on booking type and package selected.</p>
         <p>●	Is the hotel suitable for business travelers?</p>
         <p>Yes. The hotel provides an ideal environment for meetings, work stays, and business travel.
-  
   Book your stay today and experience convenience, comfort, and exceptional hospitality near Lagos Airport.
   </p>
         
@@ -381,21 +416,45 @@ export const blogPosts = [
         slug: "airport-shuttle-service-easy-airport-transfers-without-stress",
         title: "Airport Shuttle Service – Easy Airport Transfers Without Stress",
         date: "2026-06-22",
-        image: AirportHotel,
+        image: Transfer,
         excerpt:
           "One of the biggest concerns travelers face is getting to and from the airport smoothly.",
+
+          keywords: [
+  "airport shuttle Lagos",
+  "hotel with airport shuttle Lagos",
+  "airport transfer hotel Ikeja",
+  "airport pickup Lagos",
+  "hotel transport service Lagos",
+  "Lagos airport hotel shuttle",
+  "shuttle service near airport",
+  "airport pickup and drop off Lagos",
+  "airport transfer Nigeria",
+  "best airport shuttle Lagos",
+  "airport transport hotel",
+  "hotel near MMIA Lagos",
+  "shuttle hotel Ikeja",
+  "Lagos airport pickup service",
+  "hotel with transport Lagos",
+  "airport accommodation Lagos",
+  "transfer service airport hotel",
+  "premium airport hotel Lagos",
+  "airport access hotel Nigeria",
+  "hotel shuttle service Ikeja"
+],
         content: `
           <p>One of the biggest concerns travelers face is getting to and from the airport smoothly. Airport Golden Tulip Hotel simplifies your journey with convenient airport shuttle support designed to reduce travel stress.</p>
           <p>Whether arriving after a long international flight or catching an early morning departure, guests benefit from reliable transport coordination and reduced travel uncertainty.</p>
     
           <p>Our airport transfer experience focuses on:</p>
        
-          <ul>
-      <li>* Timely guest support</li>
-      <li>* Smooth arrivals and departures</li>
+      <ul>
+      <li>- Timely guest support</li>
+      <li>- Smooth arrivals and departures</li>
       <li>- Comfortable transportation</li>
       <li>- Convenience for local and international travelers</li>
-      <li>- Reduced airport transfer stress/li>
+      <li>- Reduced airport transfer stress</li></br>
+      </ul>
     
       <p>Business travelers especially value efficient movement between accommodation and airport access points.</p>
           <p>Yes. Airport pickup and drop-off services may be arranged for guests. Advance requests are recommended for smooth coordination.</p>
@@ -425,14 +484,46 @@ export const blogPosts = [
           slug: "best-hotel-breakfast-in-ikeja-start-your-morning-right",
           title: "Best Hotel Breakfast in Ikeja – Start Your Morning Right",
           date: "2026-06-25",
-          image: AirportHotel,
+          image: Breakfast,
           excerpt:
             "Breakfast is more than the first meal of the day, it sets the tone for business meetings, travel schedules, and memorable experiences.",
+
+            keywords: [
+  "best hotel breakfast Ikeja",
+  "breakfast hotel Lagos",
+  "luxury breakfast Ikeja",
+  "hotel breakfast near airport Lagos",
+  "morning dining Lagos",
+  "best breakfast in Ikeja",
+  "airport hotel breakfast",
+  "premium breakfast Lagos",
+  "breakfast buffet Ikeja",
+  "hotel restaurant Lagos",
+  "breakfast near Lagos airport",
+  "where to eat breakfast Ikeja",
+  "hotel dining Lagos",
+  "breakfast experience Nigeria",
+  "luxury hotel breakfast",
+  "airport hotel restaurant",
+  "breakfast destination Ikeja",
+  "best hotel food Lagos",
+  "breakfast accommodation Lagos",
+  "top breakfast hotel Ikeja"
+],
           content: `
             <p>Breakfast is more than the first meal of the day, it sets the tone for business meetings, travel schedules, and memorable experiences.</p>
             <p>At Airport Golden Tulip Hotel, breakfast is designed to deliver quality, variety, and a satisfying start to every morning.</p>
             <p>Guests enjoy an inviting breakfast experience featuring selections designed for both local and international preferences</p>
             <p>What makes a great hotel breakfast?</p>
+      <ul>
+      <li>- Fresh preparation</li>
+      <li>- Balanced options</li>
+      <li>- Comfortable dining atmosphere</li>
+      <li>- Consistent quality</li>
+      <li>- Excellent service</li></br>
+      </ul>
+      <p>Travelers staying near Lagos airport appreciate beginning their day with a breakfast experience that combines convenience and hospitality.</p>
+      <p>Whether heading to meetings, flights, or exploring Lagos, breakfast becomes part of the journey.</p>
           `,
         },
 
