@@ -9,11 +9,14 @@ import "@/components/Blog/blog.css";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  
 
   
 
 const post =
   getPostBySlug(slug) || getPostBySlug2(slug);
+
+  
 
   if (!post) {
     return {
@@ -52,7 +55,8 @@ const post =
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
 
-  const post = getPostBySlug(slug);
+  // const post = getPostBySlug(slug);
+    const post = getPostBySlug(slug) || getPostBySlug2(slug);
 
   if (!post) {
     notFound();

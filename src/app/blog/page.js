@@ -49,9 +49,16 @@ export default function BlogPage() {
             <div className="blog-card-content">
               <h2>{post.title}</h2>
 
-              <time>
-                {new Date(post.date).toLocaleDateString()}
-              </time>
+              {/* <time> */}
+                {/* {new Date(post.date).toLocaleDateString()} */}
+                <time dateTime={post.date}>
+  {new Date(post.date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  })}
+</time>
+              {/* </time> */}
 
               <p>{post.excerpt}</p>
 
