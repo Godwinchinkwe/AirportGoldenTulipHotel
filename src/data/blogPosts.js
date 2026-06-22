@@ -388,8 +388,7 @@ export const blogPosts = [
         <p>Guests enjoy comfortable rooms, quality dining options, reliable service, modern amenities, and easy airport access, all within a welcoming hospitality environment.</p>
         <p>Whether you're arriving late, departing early, attending meetings in Ikeja, or planning a short stay in Lagos, Airport Golden Tulip Hotel delivers convenience and comfort in one location</p>
         <h2>Why Travelers Choose Airport Golden Tulip Hotel</h2>
-        <ul>
-    <li>●	Easy access to Lagos airport</li> </br>
+    <ul><li>●	Easy access to Lagos airport</li> </br>
     <li>●	Comfortable rooms and premium hospitality</li></br>
     <li>●	Business-friendly facilities</li></br>
     <li>●	Airport transfer convenience</li></br>
