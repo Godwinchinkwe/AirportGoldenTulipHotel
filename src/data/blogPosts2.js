@@ -5,6 +5,7 @@ import Stopover from "../../public/images/blog/Stopover.jpeg";
 import Comft from "../../public/images/blog/Comft.jpeg";
 import Bizz from "../../public/images/blog/Bizz.jpeg";
 import Best from "../../public/images/blog/Best.jpeg";
+import Map from "../../public/images/blog/Map.jpeg";
 
    export const blogPosts2 = [
 
@@ -229,9 +230,9 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
   },
  {
     slug: "lagos-hotels-near-murtala-muhammed-airport-ranked",
-    title: "Lagos Hotels Near Murtala Muhammed Airport Ranked: Airport Golden Tulip Hotel Leads the Chart",
+    title: "Lagos Hotels Near Murtala Muhammed Airport Ranked",
     date: "2026-06-20",
-    image: AirportHotel,
+    image: Map,
     excerpt:
       "",
     content: `
