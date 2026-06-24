@@ -42,15 +42,14 @@ export const blogPosts = [
 
     content: `
       <p>Lagos is Nigeria's commercial capital and one of Africa's busiest travel destinations. Whether you're visiting for business, leisure, or a short transit stop, staying close to Murtala Muhammed International Airport can save valuable time and provide unmatched convenience. Fortunately, Lagos International Airport Road is home to several outstanding hotels that cater to different budgets and preferences.</p>
-
       <p>If you're looking for the best places to stay near the airport, here are our top 10 hotel recommendations around Lagos International Airport Road. </p>
-      <h3>1. Legend Hotel Lagos Airport, Curio Collection by Hilton</h3>
-      <p>Widely regarded as one of the finest airport hotels in Nigeria, Legend Hotel Lagos Airport combines luxury, comfort, and exceptional service. Located just minutes from the airport terminal, the hotel offers world-class facilities, elegant rooms, fine dining options, and premium hospitality for business and leisure travelers alike.</p>
-      <h3>2. Rollace Hotel Lagos Nigeria</h3>
-      <p>Rollace Hotel has earned a strong reputation for providing quality accommodation, excellent customer service, and modern amenities. Its strategic location near the airport makes it a preferred choice for corporate travelers and visitors seeking comfort and convenience.</p>
-            <h3>3. Airport Golden Tulip Hotel</h3>
+      <h3>1. Airport Golden Tulip Hotel</h3>
       <p>Airport Golden Tulip Hotel stands out as one of the most recognizable hotels along Lagos International Airport Road. The hotel offers stylish accommodation, spacious conference facilities, quality dining experiences, and easy access to the airport. Its blend of comfort, convenience, and professional service makes it a top choice for travelers arriving in or departing from Lagos.</p>
       <p>Whether you're attending a business meeting, hosting an event, or simply looking for a relaxing stay close to the airport, Airport Golden Tulip Hotel delivers a memorable hospitality experience.</p>
+       <h3>2. Legend Hotel Lagos Airport, Curio Collection by Hilton</h3>
+      <p>Widely regarded as one of the finest airport hotels in Nigeria, Legend Hotel Lagos Airport combines luxury, comfort, and exceptional service. Located just minutes from the airport terminal, the hotel offers world-class facilities, elegant rooms, fine dining options, and premium hospitality for business and leisure travelers alike.</p>
+      <h3>3. Rollace Hotel Lagos Nigeria</h3>
+      <p>Rollace Hotel has earned a strong reputation for providing quality accommodation, excellent customer service, and modern amenities. Its strategic location near the airport makes it a preferred choice for corporate travelers and visitors seeking comfort and convenience.</p>
        <h3>4. Greenpoint Hotel</h3>
       <p>Greenpoint Hotel offers modern facilities, comfortable rooms, and excellent customer service. The hotel is popular among business travelers and tourists looking for quality accommodation near the airport corridor.</p>
              <h3> 5. Swiss International D'Palms Airport Hotel</h3>
