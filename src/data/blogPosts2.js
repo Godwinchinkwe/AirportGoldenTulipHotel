@@ -6,6 +6,14 @@ import Comft from "../../public/images/blog/Comft.jpeg";
 import Bizz from "../../public/images/blog/Bizz.jpeg";
 import Best from "../../public/images/blog/Best.jpeg";
 import Map from "../../public/images/blog/Map.jpeg";
+import Clean from "../../public/images/blog/clean.jpeg";
+import Family from "../../public/images/blog/Famly.jpeg";
+import Except from "../../public/images/blog/Except.jpeg";
+import Short from "../../public/images/blog/Short.jpeg";
+import Muh from "../../public/images/blog/Muh.jpeg";
+import Airbiz from "../../public/images/blog/Airbiz.jpeg";
+
+
 
    export const blogPosts2 = [
 
@@ -53,14 +61,16 @@ Its strategic location also provides easy access to Ikeja's business district, s
       <li>- Transit passengers with overnight layovers</li></ul>
       <p>No matter your reason for visiting Lagos, staying close to the airport offers both convenience and comfort.<p>
       <h2>Tips for Booking an Airport Hotel</h2>
-      <p>Before making your reservation, consider these important factors:<p><ul>
+      <p>Before making your reservation, consider these important factors:</p>
+      <ul>
       <li>- Check the hotel's distance from the airport.</li>
       <li>- Look for complimentary airport shuttle services.</li>
       <li>- Read recent guest reviews.</li>
       <li>- Confirm Wi-Fi availability and speed.</li>
       <li>- Verify restaurant operating hours.</li>
       <li>- Ensure 24-hour reception is available.</li>
-      <li>- Compare room amenities and rates.</li></ul>
+      <li>- Compare room amenities and rates.</li>
+      </ul>
       <p>Choosing the right hotel can greatly improve your travel experience.<p>
       <h2>Final Thoughts</h2>
       <p>Whether you're flying into Lagos for business, attending meetings, or waiting for your next flight, staying near the airport helps you save time, reduce stress, and enjoy a more comfortable journey.
@@ -174,7 +184,7 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
     date: "2026-06-24",
     image: Best,
     excerpt:
-      "",
+      "If you're traveling through Lagos and need a comfortable place to ...",
       keywords: [
   "top rated hotels near Airport Road Lagos",
   "hotels near Airport Road Lagos",
@@ -253,11 +263,251 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
       <p>For anyone looking for a reliable hotel experience close to the airport, Airport Golden Tulip Hotel remains one of the top options in Lagos.</p>
     `,
   },
+   {
+    slug: "why-cleanliness-matters-in-hotels",
+    title: "Why Cleanliness Matters in Hotels",
+    date: "2026-06-29",
+    image: Clean,
+    excerpt:
+      "A hotel stay is more than a room, it is ...",
+      keywords: [
+  "clean hotel Lagos",
+  "clean hotels near airport",
+  "hygienic hotel Ikeja",
+  "luxury hotel cleanliness",
+  "best clean hotel Lagos",
+  "hotel hygiene standards Nigeria",
+  "comfortable hotel Lagos",
+  "clean accommodation Ikeja",
+  "premium hotel experience Lagos",
+  "airport hotel cleanliness",
+  "hotel sanitation Lagos",
+  "safe hotel stay Nigeria",
+  "luxury accommodation Lagos",
+  "clean rooms Ikeja",
+  "quality hotel service Lagos",
+  "airport hotel comfort",
+  "trusted hotel Lagos",
+  "hotel guest experience Nigeria",
+  "modern hotel Ikeja",
+  "best hospitality Lagos"
+],
+    content: `
+      <p>A hotel stay is more than a room, it is trust.</p>
+      <p>Guests may forget décor details, but they rarely forget how a place made them feel. Cleanliness influences comfort, confidence, health perception, and overall guest satisfaction.</p>
+      <p>At Airport Golden Tulip Hotel, cleanliness is part of the guest experience, not an afterthought.</p>
+      <p>From guest rooms and dining spaces to common areas and hospitality standards, maintaining a clean environment supports relaxation and creates a welcoming atmosphere for every traveler</p>
+      <p>Clean hotels help guests:</p>
+      <ul>
+      <li>- Feel more comfortable and secure.</li>
+      <li>- Sleep better.</li>
+      <li>- Enjoy meals with confidence.</li>
+      <li>- Experience better overall satisfaction.</li>
+      <li>- Return and recommend the destination.</li>
+      </ul>
+      <p>For business travelers, families, and transit guests, a clean hotel environment becomes an important factor in choosing where to stay.</p>
+      <p>Travel should feel refreshing. Clean spaces make that possible.</p>
+      <h2>Frequently Asked Questions</h2></br>
+       <h4>●	Why is hotel cleanliness important?</h4>
+      <p>Clean environments improve comfort, guest confidence, and overall stay quality.</p>
+      <h4>●	How often are rooms maintained?</h4>
+      <p>Room preparation and servicing follow hotel operational standards.</p>
+      <h4>●	Does cleanliness affect guest experience?</h4>
+      <p>Yes. It remains one of the strongest factors influencing reviews and repeat stays.</p>
+    `,
+  },
+ {
+    slug: "hotel-near-lagos-airport-for-business-travelers",
+    title: "Hotel Near Lagos Airport for Business Travelers",
+    date: "2026-06-29",
+    image: Airbiz,
+    excerpt:
+      "Business travel demands efficiency, convenience, and ...",
+      keywords: [
+  "business hotel Lagos",
+  "hotel near airport Lagos",
+  "business accommodation Ikeja",
+  "executive hotel Lagos",
+  "airport business hotel",
+  "conference hotel Lagos",
+  "business stay Nigeria",
+  "hotel for executives Lagos",
+  "airport hotel Ikeja",
+  "meeting hotel Lagos",
+  "luxury business accommodation",
+  "transit hotel Lagos",
+  "premium hotel Ikeja",
+  "executive stay Lagos",
+  "corporate hotel Lagos",
+  "hotel for meetings Ikeja",
+  "Lagos airport accommodation",
+  "business travel hotel",
+  "professional hotel Lagos",
+  "airport hotel for executives"
+],
+    content: `
+      <p>Business travel demands efficiency, convenience, and comfort</p>
+      <p>Airport Golden Tulip Hotel provides an ideal environment for professionals who need quick airport access while maintaining productivity.</p>
+      <p>Located near Lagos airport and close to major business activity zones in Ikeja, the hotel allows guests to maximize time and minimize commuting stress.</p>
+      <p>Business guests value:</p>
+       <ul>
+      <li>- Easy airport access</li>
+      <li>- Comfortable accommodation.</li>
+      <li>- Meeting-friendly environment.</li>
+      <li>- Dining convenience.</li>
+      <li>- Professional hospitality.</li>
+      </ul>
+      <p>Whether attending conferences, hosting meetings, or making a quick business stop, staying near the airport helps simplify travel.</p>
+      <p>Stay productive. Stay connected.</p>
+    `,
+  },
+ {
+    slug: "luxury-hotel-near-lagos-airport-for-short-stays",
+    title: "Luxury Hotel Near Lagos Airport for Short Stays",
+    date: "2026-06-29",
+    image:Short,
+    excerpt:
+      "Not every hotel stay needs to be long to be ...",
 
-
-
-
-
+      keywords: [
+  "short stay hotel Lagos",
+  "airport hotel short stay",
+  "luxury hotel Ikeja",
+  "transit accommodation Lagos",
+  "overnight hotel Lagos airport",
+  "premium stay Ikeja",
+  "quick stay hotel Lagos",
+  "airport hotel Nigeria",
+  "luxury airport accommodation",
+  "hotel near MMIA",
+  "business transit hotel",
+  "comfortable hotel Ikeja",
+  "short trip hotel Lagos",
+  "airport lodging Nigeria",
+  "luxury stay Lagos",
+  "best transit hotel",
+  "airport overnight stay",
+  "airport accommodation Ikeja",
+  "premium short stay",
+  "hotel near airport terminal"
+],
+    content: `
+      <p>Not every hotel stay needs to be long to be memorable.</p>
+      <p>Airport Golden Tulip Hotel offers comfort and convenience for travelers staying overnight, waiting between flights, or making short business visits.</p>
+      <p>Short stays become easier when guests enjoy:</p>
+      <p>- Fast arrival experience</p>
+      <p>- Comfortable rooms</p>
+      <p>- Excellent food options</p>
+      <p>- Convenient location</p>
+      <p>- Relaxing atmosphere</p>
+      <p>Book comfort close to the airport.  <a href="https://www.airportgoldentuliphotel.com/booking">
+      Book Now</a></p>
+    `,
+  },
+ {
+    slug: "family-friendly-hotel-near-lagos-airport",
+    title: "Family-Friendly Hotel Near Lagos Airport",
+    date: "2026-06-29",
+    image: Family,
+    excerpt:
+      "Traveling with family requires convenience, comfort, and ...",
+    content: `
+      <p>Traveling with family requires convenience, comfort, and peace of mind.</p>
+      <p>Airport Golden Tulip Hotel creates an environment designed for memorable family stays close to Lagos airport</p>
+      <p>Families benefit from:</p>
+      <p>- Comfortable room options</p>
+      <p>- Convenient dining</p>
+      <p>- Reduced airport travel stress</p>
+      <p>- Relaxing spaces</p>
+      <p>- Easy accessibility</p>
+      <p>Whether arriving in Lagos or preparing for departure, choosing the right hotel can make travel smoother for everyone.</p>
+      <marquee>Travel together. Stay comfortably.</marquee>
+    `,
+  },
+ {
+    slug: "hotel-near-lagos-airport-with-exceptional-hospitality",
+    title: "Hotel Near Lagos Airport With Exceptional Hospitality",
+    date: "2026-07-01",
+    image: Except,
+    excerpt:
+      "",
+      keywords: [
+  "best hospitality hotel Lagos",
+  "luxury hotel service Lagos",
+  "hotel near airport Lagos",
+  "premium hotel Ikeja",
+  "guest experience Lagos",
+  "airport accommodation Nigeria",
+  "luxury stay Lagos",
+  "hotel hospitality Nigeria",
+  "customer service hotel Lagos",
+  "airport hotel comfort",
+  "business hospitality Lagos",
+  "top hotel Ikeja",
+  "airport luxury accommodation",
+  "elegant hotel Lagos",
+  "premium guest experience",
+  "comfortable hotel stay",
+  "airport business hotel",
+  "best service hotel Lagos",
+  "hospitality destination Lagos",
+  "luxury airport hotel"
+],
+    content: `
+      <p>Great hospitality transforms a hotel stay into an experience guests remember.</p>
+      <p>Airport Golden Tulip Hotel focuses on comfort, service quality, and creating a welcoming atmosphere for every visitor.</p>
+      <p>What guests appreciate:</p>
+      <p>- Professional service</p>
+      <p>- Comfortable spaces</p>
+      <p>- Smooth guest experience</p>
+      <p>- Dining convenience</p>
+      <p>- Relaxed environment</p>
+      <p>Hospitality is not only about rooms, it is about how people feel during their stay.</p>
+      <p>Experience hospitality that stays with you!</p>
+    `,
+  },
+ {
+    slug: "where-to-stay-near-murtala-muhammed-airport",
+    title: "Where to Stay Near Murtala Muhammed Airport",
+    date: "2026-07-2",
+    image: Muh,
+    excerpt:
+      "",
+    keywords: [
+  "where to stay near Lagos airport",
+  "hotels near Murtala Muhammed airport",
+  "best airport hotel Lagos",
+  "luxury accommodation Ikeja",
+  "transit hotel Nigeria",
+  "airport stay Lagos",
+  "premium airport hotel",
+  "hotel close to airport",
+  "Lagos airport accommodation",
+  "airport hospitality Lagos",
+  "business hotel airport",
+  "luxury hotel Lagos",
+  "airport travel hotel",
+  "short stay Lagos",
+  "hotel near MMIA",
+  "executive hotel Lagos",
+  "hotel airport transfer Lagos",
+  "comfortable airport hotel",
+  "airport lodging Nigeria",
+  "top hotel Ikeja",
+],
+      
+    content: `
+      <p>Finding the right hotel near the airport can improve every part of your trip.</p>
+      <p>Airport Golden Tulip Hotel gives travelers a balance of accessibility, comfort, and hospitality close to Lagos airport.</p>
+      <p>Ideal for:</p>
+      <p>- International travelers</p>
+      <p>- Business professionals</p>
+      <p>- Transit guests</p>
+      <p>- Family visitors</p>
+      <p>- Short city stays</p>
+      <p>Choose convenience without compromising comfort. Stay closer. Travel smarter.</p>
+    `,
+  },
 
 ];
 

@@ -35,8 +35,7 @@ export default function BlogPage() {
           <article key={post.slug} className="blog-card">
                           <Link
                 href={`/blog/${post.slug}`}
-                className="read-more-btn"
-              >
+                className="read-more-btn">
             <Image
               src={post.image}
               alt={post.title}
