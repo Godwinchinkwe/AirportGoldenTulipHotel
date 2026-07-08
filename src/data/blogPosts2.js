@@ -619,7 +619,7 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
   },
 
    {
-    slug: "why-staying-near-murtala-muhammed-international-airport ",
+    slug: "why-staying-near-murtala-muhammed-international-airport",
     title: "Why Staying Near Murtala Muhammed International Airport",
     date: "2026-06-20",
     image: Murtala,
@@ -648,7 +648,7 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
       <p>Our hotel offers:</p>
         <ul>
       <li>- •	High-speed Wi-Fi </li>
-      <li>- •	•	Comfortable workspaces </li>
+      <li>- •	Comfortable workspaces </li>
       <li>- •	Meeting facilities </li>
       <li>- •	Peaceful rooms for relaxation  </li>
       </ul>

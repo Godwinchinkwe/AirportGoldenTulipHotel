@@ -102,7 +102,7 @@ export const metadata = {
   openGraph: {
     title: "Airport Golden Tulip Hotel",
     description:
-      "Luxury airport hotel offering premium accommodation, dining, events and conference facilities.",
+      "Lagos airport hotel Close to the Airport offering premium accommodation, dining, events and conference facilities.",
     url: "https://airportgoldentuliphotel.com",
     siteName: "Airport Golden Tulip Hotel",
     locale: "en_US",
