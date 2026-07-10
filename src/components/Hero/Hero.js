@@ -38,7 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="hero-text"
         >
-          <h1>Hotel Near Lagos Airport </h1>
+          <h1>Hotels Near Lagos Airport </h1>
 
           <div className="tagline">
             <Typewriter

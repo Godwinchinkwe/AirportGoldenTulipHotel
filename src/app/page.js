@@ -291,9 +291,9 @@ const Home = () => {
               <h2>Ready to Experience Luxury?</h2>
 
               <p>
-                Book your stay at Airport Golden Tulip Hotel
-                and enjoy world-class hospitality.
+                Experience refined comfort and effortless elegance at Airport Golden Tulip Hotel, a premium hotel near MMIA Ikeja Lagos ideally located on Airport Road Ikeja, delivering unmatched convenience for travelers seeking a trusted hotel Airport Road and a top-rated transit hotel Lagos airport. Just minutes from Murtala Muhammed International Airport, our hotel offers a seamless blend of luxury accommodation, modern amenities, and exceptional hospitality for both local and international guests.
               </p>
+              <p>Whether you re visiting Lagos for business, leisure, or a short transit stay, enjoy spacious rooms, high-speed Wi-Fi, fine dining, and a serene environment designed to help you relax and recharge. Avoid the stress of city traffic and choose a reliable hotel on Airport Road Ikeja, known for comfort, security, and quick airport access.</p>
 
               <Link
                 href="/booking"

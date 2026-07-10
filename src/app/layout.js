@@ -20,7 +20,7 @@ export const metadata = {
   },
 
   description:
-    "Airport Golden Tulip Hotel Lagos is a luxury hotel located 2 minutes from Murtala Muhammed International Airport. Enjoy premium rooms, airport convenience, conference facilities, fine dining and exceptional hospitality.",
+    "Airport Golden Tulip Hotel is a premium hotel on Airport Road, Ikeja, Lagos, located just minutes from Murtala Muhammed International Airport. Whether you are travelling for business, conferences, transit stays, or leisure, our hotel offers luxury rooms, executive suites, fine dining, event facilities, airport convenience, and exceptional hospitality, making it a preferred choice for both local and international travellers.",
 
   keywords: [
     "airport hotel",
@@ -102,7 +102,7 @@ export const metadata = {
   openGraph: {
     title: "Airport Golden Tulip Hotel",
     description:
-      "Lagos airport hotel Close to the Airport offering premium accommodation, dining, events and conference facilities.",
+      "Lagos airport hotel Close to the Lagos Airport offering premium accommodation, dining, events and conference facilities.",
     url: "https://airportgoldentuliphotel.com",
     siteName: "Airport Golden Tulip Hotel",
     locale: "en_US",
