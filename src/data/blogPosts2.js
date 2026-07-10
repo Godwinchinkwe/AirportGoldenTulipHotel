@@ -648,7 +648,7 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
       <p>Our hotel offers:</p>
         <ul>
       <li>- •	High-speed Wi-Fi </li>
-      <li>- •	Comfortable workspaces </li>
+      <li>- •	 Comfortable workspaces </li>
       <li>- •	Meeting facilities </li>
       <li>- •	Peaceful rooms for relaxation  </li>
       </ul>
