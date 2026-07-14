@@ -15,6 +15,10 @@ import Airbiz from "../../public/images/blog/Airbiz.jpeg";
 import Murtala from "../../public/images/blog/Murtala.jpeg";
 import Bag from "../../public/images/blog/Bag.jpeg";
 import Ultimate from "../../public/images/blog/Ultimate.jpeg";
+import Tip from "../../public/images/blog/Tip.jpeg";
+import Closer from "../../public/images/blog/Closer.jpeg";
+import Discover from "../../public/images/blog/Discover.jpeg";
+
 
 
 
@@ -574,7 +578,7 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
     date: "2026-06-20",
     image: Bag,
     excerpt:
-      "",
+      "Business travel demands efficiency, comfort, and reliable services",
     content: `
       <p>Business travel demands efficiency, comfort, and reliable services.</p>
       <p>Airport Golden Tulip Hotel has become a preferred destination for professionals visiting Lagos.</p>
@@ -624,7 +628,7 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
     date: "2026-06-20",
     image: Murtala,
     excerpt:
-      "",
+      "Whether you're arriving late at night, catching an early morning flight, or visiting Lagos for business",
       keywords: [
   "best hotel near Lagos airport",
   "luxury hotel Lagos",
@@ -681,6 +685,51 @@ Airport Golden Tulip Hotel combines convenience, modern amenities, professional 
       <p>If you're searching for the perfect hotel near Murtala Muhammed International Airport, Airport Golden Tulip Hotel offers comfort, convenience, and exceptional hospitality.</p>
     `,
   },
+
+   {
+    slug: "top-reasons-airport-golden-tulip-hotel-is-the-best-hotel-near-mmia-ikeja-lagos",
+    title: "Top Reasons Airport Golden Tulip Hotel Is the Best Hotel Near MMIA Ikeja Lagos",
+    date: "2026-07-14",
+    image: Tip,
+    excerpt:
+      "Traveling through Lagos becomes effortless when you stay at Airport Golden Tulip Hotel, a premium hotel near",
+    content: `
+      <p>Traveling through Lagos becomes effortless when you stay at Airport Golden Tulip Hotel, a premium hotel near MMIA Ikeja Lagos perfectly positioned on Airport Road Ikeja, offering unmatched accessibility and comfort for business and leisure travelers seeking a reliable transit hotel Lagos airport experience.</p>
+      <p>Located just minutes from Murtala Muhammed International Airport, this hotel on Airport Road Ikeja eliminates the stress of unpredictable Lagos traffic, allowing guests to move seamlessly between flights, meetings, and relaxation. Whether arriving late at night or catching an early flight, proximity makes all the difference.</p>
+      <p>Guests enjoy luxury accommodation with spacious rooms, high-speed Wi-Fi, modern facilities, and a peaceful environment designed for productivity and rest. The hotel also offers fine dining, professional service, and a secure setting, making it one of the most trusted hotels near Lagos airport.</p>
+      <p>For travelers who value convenience, comfort, and efficiency, Airport Golden Tulip Hotel stands out as the ideal hotel Airport Road Ikeja choice for a smooth and enjoyable stay.</p>
+    `,
+  },
+   {
+    slug: "the-ultimate-transit-hotel-lagos-airport-experience-at-airport-golden-tulip-hotel",
+    title: "The Ultimate Transit Hotel Lagos Airport Experience at Airport Golden Tulip Hotel",
+    date: "2026-07-14",
+    image: Closer,
+    excerpt:
+      "",
+    content: `
+      <p>For travelers in need of a dependable transit hotel Lagos airport, Airport Golden Tulip Hotel offers the perfect blend of luxury, accessibility, and efficiency, making it a top choice for anyone searching for a hotel near MMIA Ikeja Lagos or a trusted hotel on Airport Road Ikeja.</p>
+      <p>Designed for modern travelers, this hotel Airport Road Ikeja provides everything needed for a short or extended stay, including comfortable rooms, fast internet, quality dining, and excellent customer service. Its proximity to the airport ensures quick transfers and a stress-free travel experience.</p>
+      <p>Whether you’re on a layover, business trip, or quick visit, staying at a hotel near Lagos airport allows you to maximize your time while enjoying premium comfort. Guests can relax, recharge, and prepare for their next journey without the hassle of long commutes.</p>
+      <p>Airport Golden Tulip Hotel remains a preferred destination for those seeking a reliable, secure, and luxurious transit hotel Lagos airport experience in the heart of Ikeja.</p>
+    `,
+  },
+ {
+    slug: "discover-the-advantage-of-staying-on-airport-road-ikeja-near-lagos-airport",
+    title: "Discover the Advantage of Staying on Airport Road Ikeja Near Lagos Airport",
+    date: "2026-07-14",
+    image: Discover,
+    excerpt:
+      "",
+    content: `
+      <p>Choosing the right location is essential when visiting Lagos, and Airport Road Ikeja remains one of the most strategic areas for travelers looking for a hotel near MMIA Ikeja Lagos with quick airport access and minimal travel stress.</p>
+      <p>Airport Golden Tulip Hotel, a leading hotel on Airport Road Ikeja, offers guests a unique advantage by combining luxury hospitality with proximity to the airport, making it a top-rated transit hotel Lagos airport for international visitors and business professionals.</p>
+      <p>Staying at a hotel Airport Road means avoiding long travel times, reducing the risk of missing flights, and enjoying a more relaxed travel experience. Guests benefit from modern rooms, reliable Wi-Fi, meeting facilities, and a calm atmosphere ideal for both work and relaxation.</p>
+      <p>With its exceptional service, secure environment, and prime location, Airport Golden Tulip Hotel continues to attract travelers searching for comfort and convenience at a premium hotel near Lagos airport.</p>
+    `,
+  },
+
+
 
 
 
