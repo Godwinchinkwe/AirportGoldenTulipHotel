@@ -1,12 +1,11 @@
 // src/app/layout.js
 
 import "./globals.css";
+import Script from "next/script";
 
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
-
-
 
 export const metadata = {
   metadataBase: new URL("https://airportgoldentuliphotel.com"),
@@ -15,6 +14,7 @@ export const metadata = {
     default: "Airport Golden Tulip Hotel",
     template: "%s | Airport Golden Tulip Hotel",
   },
+
   icons: {
     icon: "./favicon.png",
   },
@@ -29,8 +29,8 @@ export const metadata = {
     "conference hotel",
     "business hotel",
     "airport golden tulip hotel",
-    "Airport Golden Tulip Lagos,",
-    "Golden Tulip Hotel Lagos,",
+    "Airport Golden Tulip Lagos",
+    "Golden Tulip Hotel Lagos",
     "hotel near Lagos airport",
     "Ikeja hotel near airport",
     "Hotel near Murtala Muhammed Airport",
@@ -47,8 +47,6 @@ export const metadata = {
     "hotels in Mafoluku Lagos",
     "hotel for business travelers Lagos",
     "hotel booking Lagos airport",
-    "Google My Business hotel Lagos",
-    "Google news Lagos hotel updates",
     "accommodation near Lagos international airport",
     "hotel with restaurant Lagos airport",
     "Murtala Muhammed Airport Hotel",
@@ -58,28 +56,28 @@ export const metadata = {
     "airport hotel Lagos",
     "hotel close to Murtala Muhammed International Airport",
     "hotel near Murtala Muhammed Airport Lagos",
-"best airport hotel in Lagos",
-"airport accommodation Lagos",
-"Lagos airport hotel booking",
-"hotel near airport terminal Lagos",
-"Airport Golden Tulip Hotel Lagos",
-"Golden Tulip Hotel Lagos airport",
-"Airport Golden Tulip near Lagos airport",
-"Golden Tulip airport hotel Nigeria",
-"Airport Golden Tulip Hotel Ikeja",
-"top hotels near Lagos airport",
-"recommended hotel near Lagos airport",
-"best place to stay near Lagos airport",
-"where to stay near Lagos airport",
-"overnight hotel near Lagos airport",
-"business hotel near Lagos airport",
-"hotel with airport shuttle Lagos",
-"hotel with swimming pool near Lagos airport",
-"conference hotel near Lagos airport",
-"5 star hotel near Lagos airport",
+    "best airport hotel in Lagos",
+    "airport accommodation Lagos",
+    "Lagos airport hotel booking",
+    "hotel near airport terminal Lagos",
+    "Airport Golden Tulip Hotel Lagos",
+    "Golden Tulip Hotel Lagos airport",
+    "Airport Golden Tulip near Lagos airport",
+    "Golden Tulip airport hotel Nigeria",
+    "Airport Golden Tulip Hotel Ikeja",
+    "top hotels near Lagos airport",
+    "recommended hotel near Lagos airport",
+    "best place to stay near Lagos airport",
+    "where to stay near Lagos airport",
+    "overnight hotel near Lagos airport",
+    "business hotel near Lagos airport",
+    "hotel with airport shuttle Lagos",
+    "hotel with swimming pool near Lagos airport",
+    "conference hotel near Lagos airport",
+    "5 star hotel near Lagos airport",
   ],
 
-   robots: {
+  robots: {
     index: true,
     follow: true,
     googleBot: {
@@ -91,11 +89,11 @@ export const metadata = {
     },
   },
 
-    verification: {
+  verification: {
     google: "c92b4688de54005b",
   },
 
-    alternates: {
+  alternates: {
     canonical: "https://airportgoldentuliphotel.com",
   },
 
@@ -110,24 +108,37 @@ export const metadata = {
   },
 };
 
-
-
-
-
-
-
 export default function RootLayout({ children }) {
   return (
-    // <html lang="en">
-      <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning={true}>
-      <body >
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning={true}
+    >
+      <body>
 
-        < LoadingScreen />
-        < Header />
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0XGZLVGQSY"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-0XGZLVGQSY');
+          `}
+        </Script>
+
+        <LoadingScreen />
+        <Header />
 
         <main>{children}</main>
 
-        < Footer />
+        <Footer />
       </body>
     </html>
   );
