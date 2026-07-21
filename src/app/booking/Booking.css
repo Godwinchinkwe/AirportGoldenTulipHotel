@@ -1,4 +1,64 @@
+.saving-box{
 
+background:#E7FFF0;
+
+border-left:5px solid green;
+
+padding:20px;
+
+margin-top:30px;
+
+font-size:20px;
+
+font-weight:bold;
+
+border-radius:10px;
+
+}
+.weekend-offer{
+    background:#e7fff0;
+    border:2px solid #00a651;
+    color:#00843d;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:25px;
+    text-align:center;
+    font-weight:700;
+    animation:pulseOffer 2s infinite;
+}
+
+.weekend-offer span{
+    display:block;
+    margin-top:8px;
+    font-size:.9rem;
+    font-weight:500;
+}
+
+.discount-price{
+    color:#e63946;
+    font-weight:bold;
+}
+
+.summary-total{
+    margin-top:20px;
+    border-top:2px solid #ddd;
+    padding-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+@keyframes pulseOffer{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.02);
+    }
+    100%{
+        transform:scale(1);
+    }
+
+}
 .booking-hero {
   position: relative;
   height: 60vh;

@@ -121,6 +121,10 @@ export default function About() {
           ),
         }}
       />
+      <a href="/booking" className="floating-sale">🔥 40% OFF </a>
+
+
+{/* </div> */}
 
       <div className="about">
         {/* Hero Section */}

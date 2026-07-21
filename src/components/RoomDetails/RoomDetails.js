@@ -21,13 +21,9 @@ import "./RoomDetails.css";
 
 export default function RoomDetails() {
   const params = useParams();
-
   const roomType = params.roomType;
-
   const room = rooms[roomType];
-
   const [currentImage, setCurrentImage] = useState(0);
-
   if (!room) {
     return (
       <div className="container">

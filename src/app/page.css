@@ -1,3 +1,32 @@
+.weekend-sale-banner{
+
+    background:#0d5c2f;
+
+    color:white;
+
+    padding:14px;
+
+    text-align:center;
+
+    font-weight:700;
+
+}
+
+.weekend-sale-banner span{
+
+    margin:0 20px;
+
+}
+
+.weekend-sale-banner a{
+
+    color:#FFD700;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
 
 .hero {
   position: relative;

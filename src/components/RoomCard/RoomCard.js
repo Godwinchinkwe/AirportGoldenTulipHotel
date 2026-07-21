@@ -45,6 +45,7 @@ const RoomCard = ({ room }) => {
   };
 
   return (
+    
     <motion.div
       whileHover={{ y: -5 }}
       transition={{ duration: 0.3 }}
@@ -59,6 +60,7 @@ const RoomCard = ({ room }) => {
           height={400}
           sizes="(max-width:768px) 100vw, 33vw"
         />
+        
 
         <div className="room-price">
           <span className="price-amount">

@@ -20,6 +20,7 @@ import GalleryPreview from "../../src/components/GalleryPreview/GalleryPreview";
 import Deluxe from "../../public/images/rooms/Deluxe.jpg";
 import Suite from "../../public/images/rooms/Suite.jpg";
 import Executive from "../../public/images/rooms/executive.jpg";
+// import WeekendCountdown from "../components/Promo/WeekendCountdown"
 
 import "./page.css";
 
@@ -160,11 +161,22 @@ const Home = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(hotelSchema),
-        }}
-      />
+        }}/>
 
       <div className="home">
+   
+
         <Hero />
+             <section className="weekend-sale-banner">
+    <div className="container">
+        🎉 WEEKEND SPECIAL
+        <span>
+            Save 40% on Deluxe & Executive Rooms every Friday, Saturday & Sunday until October 31st.
+        </span>
+        <a href="/booking"> Book Now →</a>
+    </div>
+</section>
+{/* <WeekendCountdown /> */}
 
         <section className="section amenities-section">
           <div className="container">
@@ -173,8 +185,7 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="section-header text-center"
-            >
+              className="section-header text-center" >
               <h2>World-Class Amenities</h2>
 
               <p className="section-subtitle">
