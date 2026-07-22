@@ -20,6 +20,7 @@ import Mapping from "../../public/images/blog/Mapping.jpeg";
 import Near from "../../public/images/blog/Near.jpeg";
 import Breakfast from "../../public/images/blog/Breakfast.jpeg";
 import Transfer from "../../public/images/blog/Transfer.jpeg";
+import Promo from "../../public/images/blog/promo.jpeg";
 
 export const blogPosts = [
   {
@@ -80,6 +81,46 @@ export const blogPosts = [
       <p>Its airport proximity also adds value for international attendees, ensuring easy travel access and smooth logistics for conferences and events.</p>
     `,
   },
+
+   {
+    slug: "enjoy-off-your-stay-at-airport-golden-tulip-hotel",
+    title: "Enjoy 40% off your stay at Airport Golden Tulip Hotel!",
+    date: "2026-06-20",
+    image: Promo,
+    excerpt:
+      "Still deciding what to do this weekend?",
+    content: `
+      <h2>Your weekend just got better – Enjoy 40% off your stay at Airport Golden Tulip Hotel!</h2>
+      <p>Still deciding what to do this weekend?</p>
+      <p>How about checking into comfort, luxury, and relaxation for 40% less?</p>
+      <p>For a limited time, we're giving you 40% OFF selected room bookings, making this the perfect excuse to take that well-deserved break.</p>
+      <p>Whether you're planning a romantic getaway, a staycation with friends, a family weekend, or simply need a quiet space to recharge, we've got everything you need for a memorable experience.</p>
+      <p>Here's what awaits you:</p>
+          <ul>
+      <li>- 	●	Elegant and comfortable rooms </li>
+      <li>- 	●	Refreshing swimming Pool</li>
+      <li>- 	●	Delicious meals and refreshing drinks</li>
+      <li>- 	●	Fully equipped fitness centre</li>
+      <li>- 	●	Complimentary high-speed Wi-Fi </li>
+      <li>- 	●	Just minutes from Murtala Muhammed International Airport and within easy reach of Lagos' major business districts </li>
+      <li>- 	●	Warm hospitality that makes every stay feel like home </li>
+      </ul>
+      <p>Why settle for an ordinary weekend when you can enjoy premium comfort at an incredible discount?</p>
+      <p>Imagine waking up in a cozy room, enjoying a delicious breakfast, taking a refreshing dip in the pool, and ending your day in complete relaxation, all without breaking the bank</p>
+      <p>But hurry! This exclusive 40% Weekend Special won't last forever, and rooms are filling up fast.</p>
+      <p>Book your stay today!</p>
+      <p>Don't let this offer pass you by. Gather your loved ones, pack your bags, and make this weekend one to remember.</p>
+      <p>Book directly through our website for a seamless reservation experience.</p>
+      <p>Visit Airport Golden Tulip Hotel, Ikeja, and experience comfort, luxury, and exceptional hospitality at an unbeatable price.</p>
+      <p>The weekend you've been looking forward to is here. Book now, save 40%, and let us make your stay unforgettable!</p>
+    `,
+  },
+
+
+
+
+
+
    {
     slug: "airport-golden-tulip-hotel-no.1-luxury-hotel-near-lagos-airport",
     title: "Airport Golden Tulip Hotel, No.1 Luxury Hotel Near Lagos Airport",
