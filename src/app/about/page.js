@@ -11,9 +11,7 @@ export const metadata = {
   },
 };
 
-// import About from "@/components/about/About";
-// import About from "@src/app/about/About.js";
-// import About from "@src/app/about/about.js";
+
 import About from "@/app/about/about";
 
 export default function Page() {

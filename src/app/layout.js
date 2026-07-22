@@ -6,6 +6,7 @@ import Script from "next/script";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
+import Promo from "@/components/Promo/Promo"
 
 export const metadata = {
   metadataBase: new URL("https://airportgoldentuliphotel.com"),
@@ -135,6 +136,7 @@ export default function RootLayout({ children }) {
 
         <LoadingScreen />
         <Header />
+        <Promo />
 
         <main>{children}</main>
 
