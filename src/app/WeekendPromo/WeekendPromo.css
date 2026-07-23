@@ -1,0 +1,501 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+.promo-page{
+    background:#fafafa;
+    overflow:hidden;
+    font-family:"Poppins",sans-serif;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.promo-hero{
+
+    position:relative;
+
+    /* min-height:100vh; */
+    min-height:100vh;
+    padding:120px 0 80px;
+
+    display:flex;
+
+    align-items:center;
+
+    /* background:url("/images/promo/hero.jpg") center center/cover no-repeat; */
+
+}
+/* .promo-hero{
+    min-height:100vh;
+    padding:120px 0 80px;
+} */
+
+.promo-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.45)
+    );
+
+}
+
+.promo-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:1350px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.promo-content{
+
+    flex:1;
+
+    color:#fff;
+
+}
+
+.promo-badge{
+
+    display:inline-block;
+
+    background:#d4af37;
+
+    color:#111;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    letter-spacing:1px;
+
+}
+
+.promo-content h1{
+
+    font-size:4.3rem;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.promo-content h1 span{
+
+    color:#d4af37;
+
+}
+
+.promo-content p{
+
+    max-width:650px;
+
+    color:#ececec;
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+    margin-bottom:40px;
+
+}
+
+.promo-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:45px;
+
+}
+
+.book-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    padding:18px 34px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.book-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.outline-btn{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    padding:18px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.outline-btn:hover{
+
+    background:#fff;
+
+    color:#111;
+
+}
+
+.promo-features{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.promo-features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:white;
+
+}
+
+.discount-card{
+
+    width:360px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.2);
+
+}
+
+.discount-card h3{
+
+    color:#666;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.discount-card h2{
+
+    font-size:5rem;
+
+    color:#d4af37;
+
+    line-height:1;
+
+}
+
+.discount-card span{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.discount-card p{
+
+    margin:20px 0;
+
+    color:#666;
+
+}
+
+.discount-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.discount-card li{
+
+    margin:15px 0;
+
+    color:#444;
+
+}
+
+.card-btn{
+
+    display:block;
+
+    margin-top:35px;
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+/* ==========================================
+   TABLETS (1024px and below)
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .promo-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    padding: 50px 0 70px;
+  }
+
+  .promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-content p {
+    max-width: 700px;
+  }
+
+  .promo-content h1 {
+    font-size: 3.4rem;
+  }
+
+  .promo-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .promo-features {
+    justify-content: center;
+  }
+
+  .discount-card {
+    width: 100%;
+    max-width: 420px;
+  }
+
+}
+
+/* ==========================================
+   MOBILE (768px and below)
+========================================== */
+
+@media (max-width: 768px) {
+
+  .promo-hero {
+    min-height: auto;
+    padding: 130px 0 70px;
+    background-position: center;
+  }
+
+  .promo-container {
+    width: 92%;
+    gap: 45px;
+  }
+
+  .promo-badge {
+    font-size: .8rem;
+    padding: 9px 18px;
+  }
+
+  .promo-content h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+
+  .promo-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .promo-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .book-btn,
+  .outline-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 17px;
+  }
+
+  .promo-features {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .promo-features div {
+    width: calc(50% - 10px);
+    justify-content: center;
+    font-size: .95rem;
+  }
+
+  .discount-card {
+    width: 100%;
+    padding: 35px 28px;
+    border-radius: 22px;
+  }
+
+  .discount-card h2 {
+    font-size: 4rem;
+  }
+
+}
+
+/* ==========================================
+   SMALL PHONES (576px and below)
+========================================== */
+
+@media (max-width: 576px) {
+
+  .promo-container {
+    width: 94%;
+  }
+
+  .promo-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .promo-content p {
+    font-size: .95rem;
+  }
+
+  .promo-features {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .promo-features div {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(6px);
+  }
+
+  .discount-card {
+    padding: 30px 22px;
+  }
+
+  .discount-card h2 {
+    font-size: 3.5rem;
+  }
+
+  .discount-card span {
+    font-size: 1.5rem;
+  }
+
+  .discount-card li {
+    font-size: .95rem;
+  }
+
+}
+
+/* ==========================================
+   EXTRA SMALL DEVICES (390px and below)
+========================================== */
+
+@media (max-width: 390px) {
+
+  .promo-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .promo-content p {
+    font-size: .92rem;
+  }
+
+  .promo-badge {
+    font-size: .72rem;
+    letter-spacing: .5px;
+  }
+
+  .book-btn,
+  .outline-btn {
+    font-size: .95rem;
+    padding: 15px;
+  }
+
+  .discount-card {
+    padding: 25px 18px;
+  }
+
+  .discount-card h2 {
+    font-size: 3rem;
+  }
+
+}

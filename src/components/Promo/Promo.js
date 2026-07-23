@@ -3,7 +3,7 @@ import "./Promo.css";
 
 const Promo = () => {
   return (
-    <a href="/booking" className="floating-sale">🔥 40% OFF </a>
+    <a href="/WeekendPromo" className="floating-sale">🔥 40% OFF </a>
   )
 }
 

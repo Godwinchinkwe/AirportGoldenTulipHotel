@@ -94,14 +94,19 @@ export default function sitemap() {
       changeFrequency: "daily",
       priority: 0.9,
     },
-
-    {
-      url: `${baseUrl}/blog`,
+  {
+    url: `${baseUrl}/WeekendPromo`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.9,
+  },
+  {
+    url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
-
+  
     ...blogUrls,
   ];
 }
