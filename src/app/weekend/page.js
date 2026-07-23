@@ -20,7 +20,7 @@ export const metadata = {
     title: '40% Weekend Discount | Airport Golden Tulip Hotel Lagos',
     description:
       'Save 40% on luxury weekend stays in Ikeja, Lagos. Limited-time offer with breakfast and airport shuttle included.',
-    url: 'https://airportgoldentuliphotel.com/WeekendPromo',
+    url: 'https://airportgoldentuliphotel.com/weekend',
     siteName: 'Airport Golden Tulip Hotel',
     images: [
       {
@@ -41,12 +41,12 @@ export const metadata = {
     images: ['https://airportgoldentuliphotel.com/images/promo/hero.jpg'],
   },
   alternates: {
-    canonical: 'https://airportgoldentuliphotel.com/weekendPromo',
+    canonical: 'https://airportgoldentuliphotel.com/weekend',
   },
 };
 
-import WeekendPromo from "@/app/WeekendPromo/WeekendPromo";
+import Weekend from "@/app/weekend/weekend";
 
 export default function Page() {
-  return <WeekendPromo />;
+  return < Weekend />;
 }

@@ -1,17 +1,16 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import "./WeekendPromo.css";
+import "./Weekend.css";
 // import Navbar from "../Navbar/Navbar";
 // import Footer from "../Footer/Footer";
 
 import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 
-const WeekendPromo = () => {
+const Weekend = () => {
   
   return (
     <>
-      {/* <Navbar /> */}
       <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
@@ -123,24 +122,16 @@ const WeekendPromo = () => {
                 <li>✔ Complimentary Breakfast</li>
 
                 <li>✔ Free Airport Shuttle</li>
-
               </ul>
-
               <a href="/booking" className="card-btn">
                 Reserve Now
               </a>
-
             </div>
-
           </div>
-
         </section>
-
       </main>
-
-      {/* <Footer /> */}
     </>
   );
 };
 
-export default WeekendPromo;
+export default Weekend;

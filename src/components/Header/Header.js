@@ -43,7 +43,7 @@ const Header = () => {
     { path: "/contact", label: "Contact" },
     { path: "/blog", label: "Blog" },
     { path: "/faq", label: "FAQ" },
-    { path: "/WeekendPromo", label: "Weekend Promo" },
+    { path: "/weekend", label: "Weekend Promo" },
   ];
 
   const isActive = (path) => {

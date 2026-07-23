@@ -22,6 +22,7 @@ export default function sitemap() {
     "Why-frequent-flyers-prefer-airport-goldent-tulip-hotel-lagos",
     "why-airport-golden-tulip-hotel-is-the-closest-comfort-to-Murtala-muhammed-airport",
     "best-hotel-near-lagos-airport-for-business-and-transit-travelers",
+    "enjoy-off-your-stay-at-airport-golden-tulip-hotel"
   ];
 
   const blogUrls = blogPosts.map((slug) => ({
@@ -95,7 +96,7 @@ export default function sitemap() {
       priority: 0.9,
     },
   {
-    url: `${baseUrl}/WeekendPromo`,
+    url: `${baseUrl}/weekend`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.9,
