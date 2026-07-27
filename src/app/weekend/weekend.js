@@ -17,9 +17,9 @@ const Weekend = () => {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Offer",
-      name: "40% Weekend Discount",
+      name: "30% Weekend Discount",
       description:
-        "Save 40% on weekend stays at Airport Golden Tulip Hotel.",
+        "Save 30% on weekend stays at Airport Golden Tulip Hotel.",
       availability: "https://schema.org/InStock",
       category: "Hotel Promotion",
       seller: {
@@ -49,7 +49,7 @@ const Weekend = () => {
               <h1>
                 Escape the Weekend.
                 <br />
-                <span>Save 40% On Every Stay.</span>
+                <span>Save 30% On Every Stay.</span>
               </h1>
 
               <p>
@@ -57,7 +57,7 @@ const Weekend = () => {
                 Airport Golden Tulip Hotel.
                 Enjoy luxury accommodation, exceptional dining,
                 premium amenities and warm hospitality —
-                now at an exclusive 40% discount.
+                now at an exclusive 30% discount.
               </p>
 
               <div className="promo-buttons">
@@ -103,7 +103,7 @@ const Weekend = () => {
 
               <h3>Weekend Deal</h3>
 
-              <h2>40%</h2>
+              <h2>30%</h2>
 
               <span>OFF</span>
 

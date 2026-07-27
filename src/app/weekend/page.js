@@ -1,9 +1,9 @@
 export const metadata = {
-  title: '40% Weekend Discount | Airport Golden Tulip Hotel Lagos',
+  title: '30% Weekend Discount | Airport Golden Tulip Hotel Lagos',
   description:
-    'Enjoy an exclusive 40% discount on luxury weekend stays at Airport Golden Tulip Hotel in Ikeja, Lagos. Complimentary breakfast, airport shuttle, swimming pool, and premium amenities included.',
+    'Enjoy an exclusive 30% discount on luxury weekend stays at Airport Golden Tulip Hotel in Ikeja, Lagos. Complimentary breakfast, airport shuttle, swimming pool, and premium amenities included.',
   keywords: [
-    '40% hotel discount Lagos',
+    '30% hotel discount Lagos',
     'weekend hotel deal Ikeja',
     'luxury hotel Lagos',
     'hotel near Lagos airport',
@@ -17,9 +17,9 @@ export const metadata = {
     "Weekend Deal"
   ],
   openGraph: {
-    title: '40% Weekend Discount | Airport Golden Tulip Hotel Lagos',
+    title: '30% Weekend Discount | Airport Golden Tulip Hotel Lagos',
     description:
-      'Save 40% on luxury weekend stays in Ikeja, Lagos. Limited-time offer with breakfast and airport shuttle included.',
+      'Save 30% on luxury weekend stays in Ikeja, Lagos. Limited-time offer with breakfast and airport shuttle included.',
     url: 'https://airportgoldentuliphotel.com/weekend',
     siteName: 'Airport Golden Tulip Hotel',
     images: [
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '40% Weekend Discount | Airport Golden Tulip Hotel Lagos',
+    title: '30% Weekend Discount | Airport Golden Tulip Hotel Lagos',
     description:
-      'Save 40% on luxury weekend stays in Ikeja, Lagos. Limited-time offer with breakfast and airport shuttle included.',
+      'Save 30% on luxury weekend stays in Ikeja, Lagos. Limited-time offer with breakfast and airport shuttle included.',
     images: ['https://airportgoldentuliphotel.com/images/promo/hero.jpg'],
   },
   alternates: {

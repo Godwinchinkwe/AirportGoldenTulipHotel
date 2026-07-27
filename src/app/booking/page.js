@@ -59,7 +59,7 @@ export default function Booking() {
     []
   );
 
-const WEEKEND_DISCOUNT = 0.40;
+const WEEKEND_DISCOUNT = 0.30;
 
 const PROMOTION_END = new Date("2026-12-31T23:59:59");
 
@@ -374,7 +374,7 @@ formData.append(
 formData.append(
   "promotion",
   pricing.promotionApplied
-    ? "Weekend Special 40%"
+    ? "Weekend Special 30%"
     : "None"
 );
 
@@ -450,7 +450,7 @@ data?.booking
 
     promotion:
         pricing.promotionApplied
-            ? "Weekend Special 40%"
+            ? "Weekend Special 30%"
             : null,
 
     roomType:
@@ -482,7 +482,7 @@ data?.booking
 
     promotion:
         pricing.promotionApplied
-            ? "Weekend Special 40%"
+            ? "Weekend Special 30%"
             : null,
 
     roomType:
@@ -512,7 +512,7 @@ data?.booking
               discount: pricing.discount,
               total: pricing.total,
               promotion: pricing.promotionApplied
-              ? "Weekend Special 40%" : null,
+              ? "Weekend Special 30%" : null,
               roomType:
                 rooms[
                   bookingData
@@ -536,7 +536,7 @@ data?.booking
                 total: pricing.total,
 
 promotion: pricing.promotionApplied
-    ? "Weekend Special 40%"
+    ? "Weekend Special 30%"
     : null,
               roomType:
                 rooms[
@@ -680,7 +680,7 @@ promotion: pricing.promotionApplied
 
     {["deluxe","executive"].includes(key) &&
 
-        " ⭐ Weekend 40% OFF"}
+        " ⭐ Weekend 30% OFF"}
 
     {" - "}
 
@@ -871,7 +871,7 @@ promotion: pricing.promotionApplied
         <div className="weekend-offer">
             🎉 Weekend Special Applied
             <span>
-                Save 40% on Friday, Saturday & Sunday Nights
+                Save 30% on Friday, Saturday & Sunday Nights
             </span>
         </div>
     )}
@@ -912,7 +912,7 @@ promotion: pricing.promotionApplied
         <>
             <div className="summary-item">
                 <span>
-                    Weekend Discount (40%)
+                    Weekend Discount (30%)
                 </span>
                 <strong className="discount-price">
                     - {formatCurrency(pricing.discount)}
