@@ -171,7 +171,7 @@ const Home = () => {
     <div className="container">
         🎉 WEEKEND SPECIAL
         <span>
-            Save 40% on Deluxe & Executive Rooms every Friday, Saturday & Sunday until October 31st.
+            Save 30% on Deluxe & Executive Rooms every Friday, Saturday & Sunday until October 31st.
         </span>
         <a href="/booking"> Book Now →</a>
     </div>
