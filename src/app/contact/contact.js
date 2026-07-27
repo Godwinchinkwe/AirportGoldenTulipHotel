@@ -127,7 +127,7 @@ export default function Contact() {
 
     {
       icon: FaPhone,
-      title: "Phone",
+      title: "Bookings / Enquiries/ Complaints / Number to call",
 
       content: (
         <>
