@@ -59,6 +59,7 @@ const Weekend = () => {
                 premium amenities and warm hospitality —
                 now at an exclusive 30% discount.
               </p>
+              <p>Terms and conditions Apply.</p>
 
               <div className="promo-buttons">
 
