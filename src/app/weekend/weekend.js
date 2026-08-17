@@ -35,13 +35,9 @@ const Weekend = () => {
         {/* ================= HERO ================= */}
 
         <section className="promo-hero">
-
           <div className="promo-overlay"></div>
-
           <div className="promo-container">
-
             <div className="promo-content">
-
               <span className="promo-badge">
                 LIMITED TIME OFFER
               </span>
@@ -71,7 +67,6 @@ const Weekend = () => {
                 <Link href="/rooms" className="outline-btn">
                   Explore Rooms
                 </Link>
-
               </div>
 
               <div className="promo-features">

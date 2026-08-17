@@ -1,19 +1,11 @@
 .saving-box{
-
 background:#E7FFF0;
-
 border-left:5px solid green;
-
 padding:20px;
-
 margin-top:30px;
-
 font-size:20px;
-
 font-weight:bold;
-
 border-radius:10px;
-
 }
 .weekend-offer{
     background:#e7fff0;
@@ -478,5 +470,142 @@ textarea.form-controll {
 
   .booking-confirmation h3 {
     font-size: var(--font-size-2xl);
+  }
+}
+
+/* =====================================================
+   GUESTS PER ROOM
+   Added for room-by-room guest selection
+===================================================== */
+
+.room-booking-row {
+  margin-bottom: var(--spacing-md);
+}
+
+.guests-per-room {
+  background-color: var(--color-off-white);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+}
+
+.guests-per-room-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.guests-per-room-header label {
+  display: block;
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  margin-bottom: 4px;
+}
+
+.guests-per-room-header p {
+  margin: 0;
+  color: var(--color-gray);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.total-guests-badge {
+  flex-shrink: 0;
+  background-color: var(--color-beige);
+  color: var(--color-secondary);
+  border-radius: var(--border-radius-full);
+  padding: 8px 14px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.room-guest-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-md);
+}
+
+.room-guest-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--border-radius-sm);
+  padding: 10px 12px;
+}
+
+.room-guest-item > span {
+  color: var(--color-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.room-guest-select {
+  width: auto;
+  min-width: 125px;
+  padding: 8px 12px;
+}
+
+.summary-guests {
+  align-items: flex-start;
+}
+
+.summary-guests > strong {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.summary-room-guests,
+.summary-room-total {
+  display: block;
+}
+
+.summary-room-total {
+  margin-top: 4px;
+  color: var(--color-primary) !important;
+}
+
+.confirmation-room-guests {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .guests-per-room-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .total-guests-badge {
+    align-self: flex-start;
+  }
+
+  .room-guest-list {
+    grid-template-columns: 1fr;
+  }
+
+  .room-guest-item {
+    padding: 12px;
+  }
+
+  .room-guest-select {
+    min-width: 120px;
+  }
+
+  .summary-guests > strong,
+  .confirmation-room-guests {
+    align-items: flex-end;
+    text-align: right;
   }
 }

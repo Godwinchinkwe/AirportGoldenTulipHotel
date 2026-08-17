@@ -19,6 +19,8 @@ export default function Booking() {
     roomType: "",
     checkIn: "",
     checkOut: "",
+    numberOfRooms: 1,
+    guestsPerRoom: [1],
     guests: 1,
     firstName: "",
     lastName: "",
@@ -190,7 +192,8 @@ const formatCurrency = (amount) => {
 
   while (current < checkout) {
 
-    subtotal += roomPrice;
+    // Each selected room is charged at the room's nightly price.
+    subtotal += roomPrice * bookingData.numberOfRooms;
 
 
     const eligibleRoom =
@@ -205,7 +208,11 @@ const formatCurrency = (amount) => {
       isWeekendNight(current)
     ) {
 
-      discount += roomPrice * WEEKEND_DISCOUNT;
+      // Weekend discount applies to every selected room.
+      discount +=
+        roomPrice *
+        WEEKEND_DISCOUNT *
+        bookingData.numberOfRooms;
 
       weekendNights++;
 
@@ -229,6 +236,45 @@ const formatCurrency = (amount) => {
 };
 
 const pricing = calculateTotal();
+
+  // Update the number of rooms and create one guest selector for each room.
+  const handleRoomCountChange = (e) => {
+    const count = Math.max(1, Math.min(10, parseInt(e.target.value, 10) || 1));
+
+    setBookingData((prev) => {
+      const guestsPerRoom = Array.from(
+        { length: count },
+        (_, index) => prev.guestsPerRoom[index] || 1
+      );
+
+      return {
+        ...prev,
+        numberOfRooms: count,
+        guestsPerRoom,
+        guests: guestsPerRoom.reduce((sum, guests) => sum + guests, 0),
+      };
+    });
+  };
+
+  const handleGuestsPerRoomChange = (roomIndex, value) => {
+    const guests = Math.max(1, Math.min(6, parseInt(value, 10) || 1));
+
+    setBookingData((prev) => {
+      const updatedGuests = [...prev.guestsPerRoom];
+      updatedGuests[roomIndex] = guests;
+
+      return {
+        ...prev,
+        guestsPerRoom: updatedGuests,
+        guests: updatedGuests.reduce((sum, roomGuests) => sum + roomGuests, 0),
+      };
+    });
+  };
+
+  const totalGuests = bookingData.guestsPerRoom.reduce(
+    (sum, guests) => sum + guests,
+    0
+  );
 
   const handleInputChange = (e) => {
     const {
@@ -322,7 +368,17 @@ const pricing = calculateTotal();
 
       formData.append(
         "guests",
-        bookingData.guests
+        totalGuests
+      );
+
+      formData.append(
+        "numberOfRooms",
+        bookingData.numberOfRooms
+      );
+
+      formData.append(
+        "guestsPerRoom",
+        JSON.stringify(bookingData.guestsPerRoom)
       );
 
       formData.append(
@@ -426,77 +482,6 @@ formData.append(
       ) {
         data = await res.json();
       }
-
-      const bookingPayload =
-
-data?.booking
-
-? {
-
-    bookingReference:
-        data.booking.reference,
-
-    status:
-        data.booking.status,
-
-    subtotal:
-        pricing.subtotal,
-
-    discount:
-        pricing.discount,
-
-    total:
-        pricing.total,
-
-    promotion:
-        pricing.promotionApplied
-            ? "Weekend Special 30%"
-            : null,
-
-    roomType:
-        rooms[
-            bookingData.roomType
-        ]?.name,
-
-    checkIn:
-        checkInAt1230,
-
-    checkOut:
-        checkOutAt1230
-
-}
-
-: {
-
-    bookingReference:
-        "Pending",
-
-    subtotal:
-        pricing.subtotal,
-
-    discount:
-        pricing.discount,
-
-    total:
-        pricing.total,
-
-    promotion:
-        pricing.promotionApplied
-            ? "Weekend Special 30%"
-            : null,
-
-    roomType:
-        rooms[
-            bookingData.roomType
-        ]?.name,
-
-    checkIn:
-        checkInAt1230,
-
-    checkOut:
-        checkOutAt1230
-
-};
 
         data?.booking
           ? {
@@ -643,21 +628,16 @@ promotion: pricing.promotionApplied
           </div>
         </div>
       </section>
-
-      {/* ALL YOUR EXISTING STEP 1, STEP 2,
-          STEP 3 AND CONFIRMATION JSX
-          CAN BE COPIED EXACTLY FROM
-          YOUR REACT FILE BELOW THIS
-          POINT */}
-                <section className="section booking-form-section">
+   
+    <section className="section booking-form-section">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="booking-form-container"
-          >
+            className="booking-form-container">
+
             {currentStep === 1 && (
               <form className="booking-form" onSubmit={handleStep1Next}>
                 <h3>Step 1: Room Selection</h3>
@@ -727,19 +707,58 @@ promotion: pricing.promotionApplied
                   </div>
                 </div>
 
-                <div className="form-group">
-                  <label htmlFor="guests">Number of Guests *</label>
-                  <select
-                    id="guests"
-                    name="guests"
-                    value={bookingData.guests}
-                    onChange={handleInputChange}
-                    required
-                    className="form-control">
-                    {[1, 2, 3].map(num => (
-                      <option key={num} value={num}>{num} Guest{num > 1 ? 's' : ''}</option>
+                <div className="form-row room-booking-row">
+                  <div className="form-group">
+                    <label htmlFor="numberOfRooms">Number of Rooms *</label>
+                    <select
+                      id="numberOfRooms"
+                      name="numberOfRooms"
+                      value={bookingData.numberOfRooms}
+                      onChange={handleRoomCountChange}
+                      required
+                      className="form-control"
+                    >
+                      {Array.from({ length: 10 }, (_, index) => index + 1).map((num) => (
+                        <option key={num} value={num}>
+                          {num} Room{num > 1 ? "s" : ""}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                <div className="guests-per-room">
+                  <div className="guests-per-room-header">
+                    <div>
+                      <label>Guests Per Room *</label>
+                      <p>Select the number of guests staying in each room.</p>
+                    </div>
+                    <span className="total-guests-badge">
+                      {totalGuests} Guest{totalGuests > 1 ? "s" : ""} Total
+                    </span>
+                  </div>
+
+                  <div className="room-guest-list">
+                    {bookingData.guestsPerRoom.map((roomGuests, index) => (
+                      <div className="room-guest-item" key={index}>
+                        <span>Room {index + 1}</span>
+                        <select
+                          value={roomGuests}
+                          onChange={(e) =>
+                            handleGuestsPerRoomChange(index, e.target.value)
+                          }
+                          required
+                          className="form-control room-guest-select"
+                        >
+                          {[1, 2, 3,].map((num) => (
+                            <option key={num} value={num}>
+                              {num} Guest{num > 1 ? "s" : ""}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
                     ))}
-                  </select>
+                  </div>
                 </div>
 
                 <button type="submit" onClick={scrollToTop} className="btn btn-primary">
@@ -855,14 +874,7 @@ promotion: pricing.promotionApplied
                 <h3>Step 3: Payment</h3>
 
                 {/* Booking Summary */}
-                {/* <div className="booking-summary">
-                  <h4>Booking Summary</h4>
-                  <div className="summary-item"><span>Room Type:</span><strong>{rooms[bookingData.roomType]?.name}</strong></div>
-                  <div className="summary-item"><span>Check-in:</span><strong>{formatDate(bookingData.checkIn)} at 12:30 PM</strong></div>
-                  <div className="summary-item"><span>Check-out:</span><strong>{formatDate(bookingData.checkOut)} at 12:30 PM</strong></div>
-                  <div className="summary-item"><span>Guests:</span><strong>{bookingData.guests}</strong></div>
-                  <div className="summary-total"><span>Total Amount:</span><strong>₦{calculateTotal()}</strong></div>
-                </div> */}
+       
 
                 <div className="booking-summary">
 
@@ -894,9 +906,23 @@ promotion: pricing.promotionApplied
         </strong>
     </div>
     <div className="summary-item">
-        <span>Guests</span>
+        <span>Number of Rooms</span>
         <strong>
-            {bookingData.guests}
+            {bookingData.numberOfRooms}
+        </strong>
+    </div>
+
+    <div className="summary-item summary-guests">
+        <span>Guests Per Room</span>
+        <strong>
+            {bookingData.guestsPerRoom.map((guests, index) => (
+              <span className="summary-room-guests" key={index}>
+                Room {index + 1}: {guests} Guest{guests > 1 ? "s" : ""}
+              </span>
+            ))}
+            <span className="summary-room-total">
+              Total: {totalGuests} Guest{totalGuests > 1 ? "s" : ""}
+            </span>
         </strong>
     </div>
     <hr />
@@ -1033,10 +1059,6 @@ with our Weekend Special.
 
       </div>
 
-      {/* <div className="detail-item">
-        <span>Total Amount:</span>
-        <strong>₦{backendBooking?.total}</strong>
-      </div> */}
       <div className="detail-item">
 
     <span>Original Price</span>
@@ -1078,9 +1100,7 @@ with our Weekend Special.
 <div className="detail-item">
 
     <span>
-
         Total Paid
-
     </span>
 
     <strong>
@@ -1096,6 +1116,24 @@ with our Weekend Special.
       <div className="detail-item">
         <span>Room Type:</span>
         <strong>{backendBooking?.roomType}</strong>
+      </div>
+
+      <div className="detail-item">
+        <span>Number of Rooms:</span>
+        <strong>{backendBooking?.numberOfRooms || bookingData.numberOfRooms}</strong>
+      </div>
+
+      <div className="detail-item">
+        <span>Guests Per Room:</span>
+        <strong className="confirmation-room-guests">
+          {(backendBooking?.guestsPerRoom || bookingData.guestsPerRoom).map(
+            (guests, index) => (
+              <span key={index}>
+                Room {index + 1}: {guests} Guest{guests > 1 ? "s" : ""}
+              </span>
+            )
+          )}
+        </strong>
       </div>
 
       <div className="detail-item">
