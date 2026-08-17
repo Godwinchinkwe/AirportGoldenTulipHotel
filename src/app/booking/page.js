@@ -107,32 +107,7 @@ const formatCurrency = (amount) => {
   }).format(amount);
 };
 
-  // const calculateTotal = () => {
-  //   if (
-  //     !bookingData.checkIn ||
-  //     !bookingData.checkOut ||
-  //     !bookingData.roomType
-  //   )
-  //     return 0;
 
-  //   const checkIn = new Date(
-  //     bookingData.checkIn
-  //   );
-
-  //   const checkOut = new Date(
-  //     bookingData.checkOut
-  //   );
-
-  //   const nights = Math.ceil(
-  //     (checkOut - checkIn) /
-  //       (1000 * 60 * 60 * 24)
-  //   );
-
-  //   const roomPrice =
-  //     rooms[bookingData.roomType]?.price || 0;
-
-  //   return nights * roomPrice;
-  // };
 
   const calculateTotal = () => {
 
@@ -461,91 +436,137 @@ formData.append(
         }
       );
 
+      // if (!res.ok) {
+      //   throw new Error(
+      //     `Booking failed (${res.status})`
+      //   );
+      // }
+
       if (!res.ok) {
-        throw new Error(
-          `Booking failed (${res.status})`
-        );
-      }
+  const errorText = await res.text();
 
-      let data = null;
+  console.error("BOOKING API ERROR:", {
+    status: res.status,
+    response: errorText,
+  });
 
-      const contentType =
-        res.headers.get(
-          "content-type"
-        );
+  throw new Error(
+    `Booking failed (${res.status}): ${errorText}`
+  );
+}
 
-      if (
-        contentType &&
-        contentType.includes(
-          "application/json"
-        )
-      ) {
-        data = await res.json();
-      }
+// let data = null;
 
-        data?.booking
-          ? {
-              bookingReference:
-                data.booking
-                  .reference,
+const contentType = res.headers.get("content-type");
 
-              status:
-                data.booking
-                  .status,
+if (!contentType?.includes("application/json")) {
+  throw new Error("The booking server returned an invalid response.");
+}
 
-              subtotal: pricing.subtotal,
-              discount: pricing.discount,
-              total: pricing.total,
-              promotion: pricing.promotionApplied
-              ? "Weekend Special 30%" : null,
-              roomType:
-                rooms[
-                  bookingData
-                    .roomType
-                ]?.name,
+const data = await res.json();
 
-              checkIn:
-                checkInAt1230,
+console.log("BOOKING SUCCESS RESPONSE:", data);
 
-              checkOut:
-                checkOutAt1230,
-            }
-          : {
-              bookingReference:
-                "Pending",
+if (!data.success || !data.booking) {
+  throw new Error("Booking was not successfully created.");
+}
+
+const bookingPayload = {
+  bookingReference: data.booking.bookingReference,
+  status: data.booking.status || "confirmed",
+  subtotal: pricing.subtotal,
+  discount: pricing.discount,
+  total: pricing.total,
+  promotion: pricing.promotionApplied
+    ? "Weekend Special 30%"
+    : null,
+  roomType: rooms[bookingData.roomType]?.name,
+  checkIn: checkInAt1230,
+  checkOut: checkOutAt1230,
+  numberOfRooms: bookingData.numberOfRooms,
+  guestsPerRoom: bookingData.guestsPerRoom,
+};
+
+setBackendBooking(bookingPayload);
+setBookingStatus(bookingPayload.status);
+setCurrentStep(4);
+
+// const contentType =
+//         res.headers.get(
+//           "content-type"
+//         );
+
+//       if (
+//         contentType &&
+//         contentType.includes(
+//           "application/json"
+//         )
+//       ) {
+//         data = await res.json();
+//       }
+
+//         data?.booking
+//           ? {
+//               bookingReference:
+//                 data.booking
+//                   .reference,
+
+//               status:
+//                 data.booking
+//                   .status,
+
+//               subtotal: pricing.subtotal,
+//               discount: pricing.discount,
+//               total: pricing.total,
+//               promotion: pricing.promotionApplied
+//               ? "Weekend Special 30%" : null,
+//               roomType:
+//                 rooms[
+//                   bookingData
+//                     .roomType
+//                 ]?.name,
+
+//               checkIn:
+//                 checkInAt1230,
+
+//               checkOut:
+//                 checkOutAt1230,
+//             }
+//           : {
+//               bookingReference:
+//                 "Pending",
 
               // total:
                 // calculateTotal(),pricing.total,
-                subtotal: pricing.subtotal,
-                discount: pricing.discount,
-                total: pricing.total,
+//                 subtotal: pricing.subtotal,
+//                 discount: pricing.discount,
+//                 total: pricing.total,
 
-promotion: pricing.promotionApplied
-    ? "Weekend Special 30%"
-    : null,
-              roomType:
-                rooms[
-                  bookingData
-                    .roomType
-                ]?.name,
+// promotion: pricing.promotionApplied
+//     ? "Weekend Special 30%"
+//     : null,
+//               roomType:
+//                 rooms[
+//                   bookingData
+//                     .roomType
+//                 ]?.name,
 
-              checkIn:
-                checkInAt1230,
+//               checkIn:
+//                 checkInAt1230,
 
-              checkOut:
-                checkOutAt1230,
-            };
+//               checkOut:
+//                 checkOutAt1230,
+//             };
 
-      setBackendBooking(
-        bookingPayload
-      );
+//       setBackendBooking(
+//         bookingPayload
+//       );
 
-      setBookingStatus(
-        bookingPayload.status ||
-          "pending"
-      );
+//       setBookingStatus(bookingPayload.status ||"pending" );
 
-      setCurrentStep(4);
+//       setCurrentStep(4);
+
+
     } catch (error) {
       console.error(error);
 
@@ -750,7 +771,7 @@ promotion: pricing.promotionApplied
                           required
                           className="form-control room-guest-select"
                         >
-                          {[1, 2, 3,].map((num) => (
+                          {[1, 2,].map((num) => (
                             <option key={num} value={num}>
                               {num} Guest{num > 1 ? "s" : ""}
                             </option>
