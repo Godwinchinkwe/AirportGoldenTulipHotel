@@ -488,7 +488,7 @@ const bookingPayload = {
 };
 
 setBackendBooking(bookingPayload);
-setBookingStatus(bookingPayload.status);
+setBookingStatus(bookingPayload.status ||"pending");
 setCurrentStep(4);
 
 // const contentType =
@@ -558,9 +558,7 @@ setCurrentStep(4);
 //                 checkOutAt1230,
 //             };
 
-//       setBackendBooking(
-//         bookingPayload
-//       );
+//       setBackendBooking(bookingPayload);
 
 //       setBookingStatus(bookingPayload.status ||"pending" );
 
@@ -992,6 +990,7 @@ setCurrentStep(4);
                 
                     <label>
                       <input
+                      required
                         type="radio"
                         name="paymentChoice"
                         value="arrival"
