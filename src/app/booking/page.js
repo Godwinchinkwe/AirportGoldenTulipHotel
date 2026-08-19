@@ -213,8 +213,8 @@ const formatCurrency = (amount) => {
 const pricing = calculateTotal();
 
   // Update the number of rooms and create one guest selector for each room.
-  const handleRoomCountChange = (e) => {
-    const count = Math.max(1, Math.min(10, parseInt(e.target.value, 10) || 1));
+  const handleRoomCountChange = (value) => {
+    const count = Math.max(1, Math.min(10, Number(value) || 1));
 
     setBookingData((prev) => {
       const guestsPerRoom = Array.from(
@@ -721,28 +721,55 @@ setCurrentStep(4);
                         required
                         className="form-controll"
                         min={bookingData.checkIn}
-                        ref={checkInRef}  />
+                        ref={checkInRef} />
                     </div>
                   </div>
                 </div>
 
-                <div className="form-row room-booking-row">
-                  <div className="form-group">
-                    <label htmlFor="numberOfRooms">Number of Rooms *</label>
-                    <select
-                      id="numberOfRooms"
-                      name="numberOfRooms"
-                      value={bookingData.numberOfRooms}
-                      onChange={handleRoomCountChange}
-                      required
-                      className="form-control"
+                <div className="room-selection-panel">
+                  <div className="room-selection-heading">
+                    <div>
+                      <span className="room-selection-eyebrow">YOUR STAY</span>
+                      <h4>How many rooms do you need?</h4>
+                      <p>Choose up to 10 rooms. You can set the guests for each room below.</p>
+                    </div>
+                    <div className="room-count-summary" aria-live="polite">
+                      <span className="room-count-number">{bookingData.numberOfRooms}</span>
+                      <span>{bookingData.numberOfRooms === 1 ? "Room" : "Rooms"}</span>
+                    </div>
+                  </div>
+
+                  <div className="room-quantity-control">
+                    <button
+                      type="button"
+                      className="quantity-btn"
+                      onClick={() => handleRoomCountChange(bookingData.numberOfRooms - 1)}
+                      disabled={bookingData.numberOfRooms <= 1}
+                      aria-label="Decrease number of rooms"
                     >
-                      {Array.from({ length: 10 }, (_, index) => index + 1).map((num) => (
-                        <option key={num} value={num}>
-                          {num} Room{num > 1 ? "s" : ""}
-                        </option>
-                      ))}
-                    </select>
+                      −
+                    </button>
+
+                    <div className="quantity-value" aria-live="polite">
+                      <strong>{bookingData.numberOfRooms}</strong>
+                      <span>{bookingData.numberOfRooms === 1 ? "Room" : "Rooms"}</span>
+                    </div>
+
+                    <button
+                      type="button"
+                      className="quantity-btn"
+                      onClick={() => handleRoomCountChange(bookingData.numberOfRooms + 1)}
+                      disabled={bookingData.numberOfRooms >= 10}
+                      aria-label="Increase number of rooms"
+                    >
+                      +
+                    </button>
+                  </div>
+
+                  <div className="room-limit-note">
+                    <span>Maximum 10 rooms</span>
+                    <span>•</span>
+                    <span>1–2 guests per room</span>
                   </div>
                 </div>
 
@@ -760,7 +787,14 @@ setCurrentStep(4);
                   <div className="room-guest-list">
                     {bookingData.guestsPerRoom.map((roomGuests, index) => (
                       <div className="room-guest-item" key={index}>
-                        <span>Room {index + 1}</span>
+                        <div className="room-guest-label">
+                          <span className="room-number-chip">{index + 1}</span>
+                          <div>
+                            <strong>Room {index + 1}</strong>
+                            <small>Guests</small>
+                          </div>
+                        </div>
+
                         <select
                           value={roomGuests}
                           onChange={(e) =>
@@ -768,8 +802,9 @@ setCurrentStep(4);
                           }
                           required
                           className="form-control room-guest-select"
+                          aria-label={`Guests for room ${index + 1}`}
                         >
-                          {[1, 2,].map((num) => (
+                          {[1, 2].map((num) => (
                             <option key={num} value={num}>
                               {num} Guest{num > 1 ? "s" : ""}
                             </option>
