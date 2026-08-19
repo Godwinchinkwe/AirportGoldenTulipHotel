@@ -115,6 +115,8 @@ const RoomCard = ({ room }) => {
               (4.9)
             </span>
           </div>
+           <br />
+            <br />
 
           <Link
             href={`/rooms/${room.id}`}

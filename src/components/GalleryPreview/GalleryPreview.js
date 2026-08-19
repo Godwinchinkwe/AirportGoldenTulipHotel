@@ -137,6 +137,8 @@ export default function GalleryPreview() {
           className="text-center"
         >
           <br />
+          <br />
+          <br />
 
           <Link
             href="/gallery"

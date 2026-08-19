@@ -104,7 +104,7 @@ const Header = () => {
             <div className="header-actions">
               <Link
                 href="/booking"
-                className="btn btn-primary"
+                className="btn1"
                 onClick={scrollToTop}
               >
                 Book Now
